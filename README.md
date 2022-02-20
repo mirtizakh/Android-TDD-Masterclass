@@ -106,3 +106,5 @@ The only thing that is possibly allowed to be mocked at a third party system and
 #### Classicist
 ##### Pros
 * Faster Refactoring
+As we stated before this approach is dealing all the collaborating classes as black boxes and does not test the implementation .When the public API of one class changes, we only need to refactor the unit test of this particular class and not the unit test of all the classes that is using it as it dependants.
+
