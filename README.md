@@ -6,6 +6,7 @@
 * [4- 3 Rules Of TDD](#4-3-Rules-Of-TDD)
 * [5- Types Of Automated Test](#5-Types-Of-Automated-Test)
 * [6- Types of TDD](#6-Types of TDD)
+* [7- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
 
 ### 1-What Is TDD
 * Test driven development is a software development methodology inspired by Kent Beck in 2003 in which the test drive the development of the application.
@@ -100,3 +101,8 @@ The only thing that is possibly allowed to be mocked at a third party system and
 * In this TDD , besides the result , we also test the interactions between the classes. We verify that the class under test is calling the right methods from the collaborating classes.
 * In this TDD , we are doing unfront design at the start of its development cycle , we sit down and think of a design that would accommodate the implementation of the feature in a clean way. Of cource we are always allowed to refactor the design later.
 * You may also hear this method as White box testing which comes from point 2 and 3, we do care about the methods that we call from the collaborating classes, therefore we are treating them as white boxes not as black boxes.
+
+### 7-Classicist vs Outside In TDD
+#### Classicist
+##### Pros
+* Faster Refactoring
