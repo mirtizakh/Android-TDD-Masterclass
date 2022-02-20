@@ -1,18 +1,18 @@
 # Android-TDD-Masterclass
 ## Table of contents
-* [What is TDD](#What-is-TDD)
-* [Advantages of TDD](#Advantages-of-TDD)
-* [TDD Development Lifecycle](#TDD-Development-Lifecycle)
-* [3 Rules of TDD](#3-Rules-of-TDD)
+* [1- What is TDD](#1-What-is-TDD)
+* [2- Advantages of TDD](#2-Advantages-of-TDD)
+* [3- TDD Development Lifecycle](#3-TDD-Development-Lifecycle)
+* [4- 3 Rules of TDD](#4-3-Rules-of-TDD)
 
 
-### What is TDD
+### 1- What is TDD
 * Test driven development is a software development methodology inspired by Kent Beck in 2003 in which the test drive the development of the application.
 * In other words it is a software engineering practice that requires a unit test to be written before the code that they are supposed to validate.
 * It is also equally important to understand what is not test driven development, a common misconception even amound senior developers of the industry is that writing a lot of automated test means that we are practicing test driven development. This is an absolutely false argument , test driven development is a methodology that defines how we are develop our application to be driven and guided by test .
 * It is perfectly possible to get 100% test code coverage without practicing TDD.While having automated test for our application is always a good thing .
 
-### Advantages of TDD
+### 2- Advantages of TDD
 #### 1- Great understanding of the product requirements.
 First of all we get the great product understanding. When we force ourselves to write the test before we write the implementation we get to think of all the factors that will make our product successful , at this point we also realize very early that certain user stories do not meet the definition of ready and we need to clarify many ambiguities with the product owner and the designers.
 #### 2- Faster Development.
@@ -31,7 +31,7 @@ Having an automated test suit in place in the best tool to avoid those situation
 #### 7- Documentation
 We are getting documentation for free , there is no better documentation than the one which doesn't only describes what the system is doing but it is also assuring that the system works. 
 
-### TDD Development Lifecycle
+### 3-TDD Development Lifecycle
 Test driven development relies on the repitition of a very short development cycle.
 This cycle can be broken down into 3 distinct steps.
 #### 1- Red :
@@ -50,7 +50,7 @@ In this phase any dirty solution that we have implemented there has to be refact
 Refactor is an internal process that aims to improve the reliability and maintainability of our system, but must not moidify the external behaviour of the program.
 An important thing ,that they want to state , is that we shaould also spend time to refactor the testing code in not only the production code , the test also part of our system.
 
-### 3 Rules of TDD 
+### 4- 3 Rules of TDD 
 The lifecycle can also be explained by the three rules of test driven development introduced by Uncle Bob Martin.
 1- The first rule is that you cannot write production code until you have written a failing unit test .
 2- The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
