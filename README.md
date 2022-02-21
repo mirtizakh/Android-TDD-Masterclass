@@ -5,7 +5,7 @@
 * [3- TDD Development Lifecycle](#3-TDD-Development-Lifecycle)
 * [4- 3 Rules Of TDD](#4-3-Rules-Of-TDD)
 * [5- Types Of Automated Test](#5-Types-Of-Automated-Test)
-* [6- Types of TDD](#6-Types of TDD)
+* [6- Types of TDD](#6-Types-of-TDD)
 * [7- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
 
 ### 1-What Is TDD
@@ -107,4 +107,16 @@ The only thing that is possibly allowed to be mocked at a third party system and
 ##### Pros
 * Faster Refactoring
 As we stated before this approach is dealing all the collaborating classes as black boxes and does not test the implementation .When the public API of one class changes, we only need to refactor the unit test of this particular class and not the unit test of all the classes that is using it as it dependants.
+This can lead to a much faster refactored.
+##### Cons
+* The most important disadvantage is that it can be hard to identify what the issue is . Since you would not make use of mocks a particular test might fail for bugs that are hidden inside the classes dependencies and not the class under test. Therefore it can be tricky to track down and fix the issues.
+* The above point also leads to the second disadvantage which is redundant coverage. Certain parts of the code are tested over and over again.
+#### Outside In  
+##### Pros
+* Easier to track down issues . Outside In TDD typically produce test that are more focused and isolated so in most cases it is very obvious why this failed and what needs to be fixed.
+* It is also considered as an advantage the dedicated time for unfront design. Good design can not happen accident and to taking the time to think of it upfront and refactoring it later and go a long way.
+* It forces that the architecture design is made . y testing the implementation for example testing that if view model is requesting the data from a repository and not carrying the HTTP request by itself , we also verify that the right architecture is being implemented.
+##### Cons
+* We are treating all the collaboating classes as white boxes , whichmeans we are also testing the implementation of them. This can lead to higher refactoring effort when we are changing the public API of the classes.
+* The second disadvantage of this flavour is that it might produce false positives which means that we might have a green test suit while a bug has managed to slip inside our code. This happens because the vast majority of the test are isolated unit test which prove that the specific unit is behaving properly , but they donot prove that the end result is correct.
 
