@@ -54,9 +54,9 @@ An important thing ,that they want to state , is that we shaould also spend time
 
 ### 4-3 Rules Of TDD 
 The lifecycle can also be explained by the three rules of test driven development introduced by Uncle Bob Martin.
-1- The first rule is that you cannot write production code until you have written a failing unit test .
-2- The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
-3- Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
+*- The first rule is that you cannot write production code until you have written a failing unit test .
+*- The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
+*- Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
 
 ### 5-Types Of Automated Test
 #### 1- Unit Test :
