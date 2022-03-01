@@ -14,22 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc937cb3-86fb-4808-a6a3-98f0a9ce9670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample/Car.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample/Car.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample/Engine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample/Engine.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/acceptancetests/CarFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/acceptancetests/CarFeature.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/unittests/CarShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/unittests/CarShould.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/unittests/EngineShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/unittests/EngineShould.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android TDD App/app/src/main/java/com/android/android_tdd_masterclass/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Android TDD App/app/src/main/java/com/android/android_tdd_masterclass/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -51,7 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1iMajkdVK01m55XIA9t0mE3DETJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,11 +52,14 @@
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel3XL" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-07T15:23:52.783Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -83,17 +77,8 @@
       <recent name="com.example.outsideintddexample" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
-    <configuration name="CarFeature" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OutsideInTDDExample.app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.outsideintddexample.acceptancetests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.outsideintddexample.acceptancetests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.outsideintddexample.acceptancetests.CarFeature" />
+  <component name="RunManager" selected="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -149,13 +134,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="unittests in app" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="OutsideInTDDExample.app" />
       <option name="TEST_OBJECT" value="directory" />
@@ -173,6 +151,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -180,6 +159,7 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -222,16 +202,34 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.acceptancetests.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.unittests in app" />
-        <item itemvalue="Android JUnit.CarFeature" />
-        <item itemvalue="Android JUnit.EngineShould" />
-        <item itemvalue="Android JUnit.CarShould" />
-        <item itemvalue="Android JUnit.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperatureGradually" />
+        <item itemvalue="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -244,71 +242,5 @@
       <updated>1601720051131</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2974" y="599" key="#app" timestamp="1602174808017">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state x="2974" y="599" key="#app/1792.23.3840.2137/0.23.1792.1030@1792.23.3840.2137" timestamp="1602174808017" />
-    <state x="3170" y="769" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1601722488922">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state x="3170" y="769" key="#com.intellij.ide.util.PackageChooserDialog/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1601722488922" />
-    <state x="3170" y="733" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601728440535">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state x="3170" y="733" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1601728440535" />
-    <state width="2510" height="403" key="GridCell.Tab.0.bottom" timestamp="1602174828143">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state width="2510" height="403" key="GridCell.Tab.0.bottom/1792.23.3840.2137/0.23.1792.1023@1792.23.3840.2137" timestamp="1601743413314" />
-    <state width="2510" height="403" key="GridCell.Tab.0.bottom/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1602013439990" />
-    <state width="2510" height="403" key="GridCell.Tab.0.bottom/1792.23.3840.2137/0.23.1792.1026@1792.23.3840.2137" timestamp="1602019363302" />
-    <state width="2510" height="353" key="GridCell.Tab.0.bottom/1792.23.3840.2137/0.23.1792.1028@1792.23.3840.2137" timestamp="1602151089426" />
-    <state width="2510" height="403" key="GridCell.Tab.0.bottom/1792.23.3840.2137/0.23.1792.1030@1792.23.3840.2137" timestamp="1602174828143" />
-    <state width="2510" height="403" key="GridCell.Tab.0.bottom/1792.23.3840.2137/0.23.1792.1031@1792.23.3840.2137" timestamp="1602158713296" />
-    <state width="2510" height="403" key="GridCell.Tab.0.center" timestamp="1602174828142">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state width="2510" height="403" key="GridCell.Tab.0.center/1792.23.3840.2137/0.23.1792.1023@1792.23.3840.2137" timestamp="1601743413313" />
-    <state width="2510" height="403" key="GridCell.Tab.0.center/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1602013439989" />
-    <state width="2510" height="403" key="GridCell.Tab.0.center/1792.23.3840.2137/0.23.1792.1026@1792.23.3840.2137" timestamp="1602019363301" />
-    <state width="2510" height="353" key="GridCell.Tab.0.center/1792.23.3840.2137/0.23.1792.1028@1792.23.3840.2137" timestamp="1602151089426" />
-    <state width="2510" height="403" key="GridCell.Tab.0.center/1792.23.3840.2137/0.23.1792.1030@1792.23.3840.2137" timestamp="1602174828142" />
-    <state width="2510" height="403" key="GridCell.Tab.0.center/1792.23.3840.2137/0.23.1792.1031@1792.23.3840.2137" timestamp="1602158713296" />
-    <state width="2510" height="403" key="GridCell.Tab.0.left" timestamp="1602174828142">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state width="2510" height="403" key="GridCell.Tab.0.left/1792.23.3840.2137/0.23.1792.1023@1792.23.3840.2137" timestamp="1601743413313" />
-    <state width="2510" height="403" key="GridCell.Tab.0.left/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1602013439989" />
-    <state width="2510" height="403" key="GridCell.Tab.0.left/1792.23.3840.2137/0.23.1792.1026@1792.23.3840.2137" timestamp="1602019363301" />
-    <state width="2510" height="353" key="GridCell.Tab.0.left/1792.23.3840.2137/0.23.1792.1028@1792.23.3840.2137" timestamp="1602151089425" />
-    <state width="2510" height="403" key="GridCell.Tab.0.left/1792.23.3840.2137/0.23.1792.1030@1792.23.3840.2137" timestamp="1602174828142" />
-    <state width="2510" height="403" key="GridCell.Tab.0.left/1792.23.3840.2137/0.23.1792.1031@1792.23.3840.2137" timestamp="1602158713296" />
-    <state width="2510" height="403" key="GridCell.Tab.0.right" timestamp="1602174828143">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state width="2510" height="403" key="GridCell.Tab.0.right/1792.23.3840.2137/0.23.1792.1023@1792.23.3840.2137" timestamp="1601743413314" />
-    <state width="2510" height="403" key="GridCell.Tab.0.right/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1602013439989" />
-    <state width="2510" height="403" key="GridCell.Tab.0.right/1792.23.3840.2137/0.23.1792.1026@1792.23.3840.2137" timestamp="1602019363301" />
-    <state width="2510" height="353" key="GridCell.Tab.0.right/1792.23.3840.2137/0.23.1792.1028@1792.23.3840.2137" timestamp="1602151089426" />
-    <state width="2510" height="403" key="GridCell.Tab.0.right/1792.23.3840.2137/0.23.1792.1030@1792.23.3840.2137" timestamp="1602174828143" />
-    <state width="2510" height="403" key="GridCell.Tab.0.right/1792.23.3840.2137/0.23.1792.1031@1792.23.3840.2137" timestamp="1602158713296" />
-    <state x="3224" y="810" key="chooseDestDirectoryDialog" timestamp="1601722482937">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state x="3224" y="810" key="chooseDestDirectoryDialog/1792.23.3840.2137/0.23.1792.1024@1792.23.3840.2137" timestamp="1601722482937" />
-    <state x="2166" y="397" width="2362" height="1241" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602150149616">
-      <screen x="0" y="23" width="3840" height="2063" />
-    </state>
-    <state x="2166" y="397" width="2362" height="1241" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.3840.2063@0.23.3840.2063" timestamp="1602150149616" />
-    <state x="3082" y="830" key="com.intellij.ide.util.TipDialog" timestamp="1601918973507">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state x="3082" y="830" key="com.intellij.ide.util.TipDialog/1792.23.3840.2137/0.23.1792.1023@1792.23.3840.2137" timestamp="1601918973507" />
-    <state x="3076" y="640" width="838" height="1032" key="search.everywhere.popup" timestamp="1601720301689">
-      <screen x="1792" y="23" width="3840" height="2137" />
-    </state>
-    <state x="3076" y="640" width="838" height="1032" key="search.everywhere.popup/1792.23.3840.2137/0.23.1792.1023@1792.23.3840.2137" timestamp="1601720301689" />
   </component>
 </project>
