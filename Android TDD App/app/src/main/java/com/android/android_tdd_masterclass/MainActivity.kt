@@ -8,24 +8,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val test = Test("Ali",45)
-        if(test === test){
 
-        }
 
     }
 
-    class Test(name:String){
 
-        init {
-           name  = "saad"
-
-        }
-        constructor(name:String,age:Int): this(name){
-
-        }
-        fun test(){
-            println(name)
-        }
-    }
 }
