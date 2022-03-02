@@ -61,7 +61,7 @@ The lifecycle can also be explained by the three rules of test driven developmen
 ### 5-Types Of Automated Test
 #### 1- Unit Test :
 * First of all we have the unit test. The unit test are the amallest and the simplest test you can write and they typically test a very small block of code for example a method.
-* They provide certain inout to the method and they expect a certain output. Unit test are supposed to be very small.
+* They provide certain input to the method and they expect a certain output. Unit test are supposed to be very small.
 * Typically if a unit test requires more than five or six lines of code it should give us heads up for refactoring the code. It is very likely that it is testing too many things, what our code has beed developed without making use of best software engineering practices.
 * The test that are written with junit, they simply required a JVM in order to run , we could copy a test from the Android application paste it over to a spring boot application and run it over there. A junit test is not aware that it is written for an Android application or bacend application or any other java based system it only knows that it is supposed to test a Java or Kotlin class.
 
