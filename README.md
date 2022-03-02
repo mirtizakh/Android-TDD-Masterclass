@@ -115,7 +115,7 @@ This can lead to a much faster refactored.
 ##### Pros
 * Easier to track down issues . Outside In TDD typically produce test that are more focused and isolated so in most cases it is very obvious why this failed and what needs to be fixed.
 * It is also considered as an advantage the dedicated time for unfront design. Good design can not happen accident and to taking the time to think of it upfront and refactoring it later and go a long way.
-* It forces that the architecture design is made . y testing the implementation for example testing that if view model is requesting the data from a repository and not carrying the HTTP request by itself , we also verify that the right architecture is being implemented.
+* It forces that the architecture design is made by testing the implementation for example testing that if view model is requesting the data from a repository and not carrying the HTTP request by itself , we also verify that the right architecture is being implemented.
 ##### Cons
 * We are treating all the collaboating classes as white boxes , whichmeans we are also testing the implementation of them. This can lead to higher refactoring effort when we are changing the public API of the classes.
 * The second disadvantage of this flavour is that it might produce false positives which means that we might have a green test suit while a bug has managed to slip inside our code. This happens because the vast majority of the test are isolated unit test which prove that the specific unit is behaving properly , but they donot prove that the end result is correct.
