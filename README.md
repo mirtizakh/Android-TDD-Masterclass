@@ -3,11 +3,11 @@
 * [1- What Is TDD](#1-What-Is-TDD)
 * [2- Advantages Of TDD](#2-Advantages-Of-TDD)
 * [3- TDD Development Lifecycle](#3-TDD-Development-Lifecycle)
-* [4- Test Preconditions / Good Test](#4-Test-Preconditions-/-Good-Test)
 * [4- 3 Rules Of TDD](#4-3-Rules-Of-TDD)
-* [5- Types Of Automated Test](#5-Types-Of-Automated-Test)
-* [6- Types of TDD](#6-Types-of-TDD)
-* [7- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
+* [5- Test Preconditions / Good Test](#5-Test-Preconditions-/-Good-Test)
+* [6- Types Of Automated Test](#5-Types-Of-Automated-Test)
+* [7- Types of TDD](#6-Types-of-TDD)
+* [8- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
 
 ### 1-What Is TDD
 * Test driven development is a software development methodology inspired by Kent Beck in 2003 in which the test drive the development of the application.
@@ -59,7 +59,7 @@ The lifecycle can also be explained by the three rules of test driven developmen
 * The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
 * Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
 
-### 4- Test Preconditions / Good Test
+### 5-Test Preconditions / Good Test
 
 * **Easy to write.** (Developer should not put a lot of effort to write the unit test)
 * **Readable.** (It should be readable by evey developer)
@@ -67,7 +67,7 @@ The lifecycle can also be explained by the three rules of test driven developmen
 * **Fast.** (Unit test provide feedback to the developer very quick)
 * **Isolated.** (If you want to test a class and that class depends on other services like database or network calls,so what happens these external factors take time to bring back the results ,they are consuming much time , so the unit tests are no longer fast .So whenever you want to test a class it should be isolated from external factors.
 
-### 5-Types Of Automated Test
+### 6-Types Of Automated Test
 #### 1- Unit Test :
 * First of all we have the unit test. The unit test are the amallest and the simplest test you can write and they typically test a very small block of code for example a method.
 * They provide certain input to the method and they expect a certain output. Unit test are supposed to be very small.
@@ -87,7 +87,7 @@ The lifecycle can also be explained by the three rules of test driven developmen
 * They practically simulates a real human user and they verify that our application meets all the application functionsl requirements.
 * Those test are live in "Android Test" folder and they required a real device or the emulator in order to run. They build the whole application and install on the phone, they simulate the user interactions like buttons or the menu navigation links and they verify that the UI elements that are being rendered on the screen are the correct ones.
 
-### 6-Types of TDD
+### 7-Types of TDD
 * Now coming back to the subject of test d.riven development , there are two main flavours "Classicist (Chicago)" and "Outside In (London)".
 * One of the most confusing things with those flavours is the amount of names that people are using refer to them. So in different courses you may hear that "Classicist" TDD also referred to as the "Detroit School of TDD" (or state based testing, Inside-out, black-box testing).
 Yes all those names are referring to the same thing.
@@ -111,7 +111,7 @@ The only thing that is possibly allowed to be mocked at a third party system and
 * In this TDD , we are doing unfront design at the start of its development cycle , we sit down and think of a design that would accommodate the implementation of the feature in a clean way. Of cource we are always allowed to refactor the design later.
 * You may also hear this method as White box testing which comes from point 2 and 3, we do care about the methods that we call from the collaborating classes, therefore we are treating them as white boxes not as black boxes.
 
-### 7-Classicist vs Outside In TDD
+### 8-Classicist vs Outside In TDD
 #### Classicist
 ##### Pros
 * Faster Refactoring
