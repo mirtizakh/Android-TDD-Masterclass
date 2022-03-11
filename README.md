@@ -3,6 +3,7 @@
 * [1- What Is TDD](#1-What-Is-TDD)
 * [2- Advantages Of TDD](#2-Advantages-Of-TDD)
 * [3- TDD Development Lifecycle](#3-TDD-Development-Lifecycle)
+* [4- Test Preconditions / Good Test](#4-Test-Preconditions-/-Good-Test)
 * [4- 3 Rules Of TDD](#4-3-Rules-Of-TDD)
 * [5- Types Of Automated Test](#5-Types-Of-Automated-Test)
 * [6- Types of TDD](#6-Types-of-TDD)
@@ -57,6 +58,14 @@ The lifecycle can also be explained by the three rules of test driven developmen
 * The first rule is that you cannot write production code until you have written a failing unit test .
 * The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
 * Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
+
+### 4- Test Preconditions / Good Test
+
+* **Easy to write.** (Developer should not put a lot of effort to write the unit test)
+* **Readable.** (It should be readable by evey developer)
+* **Reliable.** (It should run on every machine like CI server)
+* **Fast.** (Unit test provide feedback to the developer very quick)
+* **Isolated.** (If you want to test a class and that class depends on other services like database or network calls,so what happens these external factors take time to bring back the results ,they are consuming much time , so the unit tests are no longer fast .So whenever you want to test a class it should be isolated from external factors.
 
 ### 5-Types Of Automated Test
 #### 1- Unit Test :
