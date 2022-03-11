@@ -54,14 +54,14 @@ An important thing ,that they want to state , is that we shaould also spend time
 
 ### 4-3 Rules Of TDD 
 The lifecycle can also be explained by the three rules of test driven development introduced by Uncle Bob Martin.
-*- The first rule is that you cannot write production code until you have written a failing unit test .
-*- The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
-*- Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
+* The first rule is that you cannot write production code until you have written a failing unit test .
+* The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
+* Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
 
 ### 5-Types Of Automated Test
 #### 1- Unit Test :
 * First of all we have the unit test. The unit test are the amallest and the simplest test you can write and they typically test a very small block of code for example a method.
-* They provide certain inout to the method and they expect a certain output. Unit test are supposed to be very small.
+* They provide certain input to the method and they expect a certain output. Unit test are supposed to be very small.
 * Typically if a unit test requires more than five or six lines of code it should give us heads up for refactoring the code. It is very likely that it is testing too many things, what our code has beed developed without making use of best software engineering practices.
 * The test that are written with junit, they simply required a JVM in order to run , we could copy a test from the Android application paste it over to a spring boot application and run it over there. A junit test is not aware that it is written for an Android application or bacend application or any other java based system it only knows that it is supposed to test a Java or Kotlin class.
 
@@ -115,7 +115,7 @@ This can lead to a much faster refactored.
 ##### Pros
 * Easier to track down issues . Outside In TDD typically produce test that are more focused and isolated so in most cases it is very obvious why this failed and what needs to be fixed.
 * It is also considered as an advantage the dedicated time for unfront design. Good design can not happen accident and to taking the time to think of it upfront and refactoring it later and go a long way.
-* It forces that the architecture design is made . y testing the implementation for example testing that if view model is requesting the data from a repository and not carrying the HTTP request by itself , we also verify that the right architecture is being implemented.
+* It forces that the architecture design is made by testing the implementation for example testing that if view model is requesting the data from a repository and not carrying the HTTP request by itself , we also verify that the right architecture is being implemented.
 ##### Cons
 * We are treating all the collaboating classes as white boxes , whichmeans we are also testing the implementation of them. This can lead to higher refactoring effort when we are changing the public API of the classes.
 * The second disadvantage of this flavour is that it might produce false positives which means that we might have a green test suit while a bug has managed to slip inside our code. This happens because the vast majority of the test are isolated unit test which prove that the specific unit is behaving properly , but they donot prove that the end result is correct.
