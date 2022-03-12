@@ -137,4 +137,8 @@ This can lead to a much faster refactored.
 * The Ultimate Guide to Android Testing (Unit Tests, UI Tests, End-to-End Tests) - Clean Architecture <br>
 https://www.youtube.com/watch?v=EkfVL5vCDmo&list=PLQkwcJG4YTCSYJ13G4kVIJ10X5zisB2Lq <br> 
 https://www.youtube.com/watch?v=nDCCwyS0_MQ&t=58s
+* Unit Testing with Kotlin Coroutines 
+https://medium.com/swlh/kotlin-coroutines-in-android-unit-test-28ff280fc0d5 <br>
+https://medium.com/swlh/unit-testing-with-kotlin-coroutines-the-android-way-19289838d257
+
 
