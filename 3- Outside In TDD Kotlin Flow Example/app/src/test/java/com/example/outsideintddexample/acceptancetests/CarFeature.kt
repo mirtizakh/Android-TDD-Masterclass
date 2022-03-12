@@ -6,6 +6,7 @@ import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertTrue
 import kotlinx.coroutines.flow.toCollection
 import kotlinx.coroutines.flow.toList
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Rule
 import org.junit.Test
@@ -20,22 +21,22 @@ class CarFeature {
     var coroutinesTestRule = MainCoroutineScopeRule()
 
     @Test
-    fun carIsLoosingFuelWhenItTurnsOn() = runBlockingTest {
+    fun carIsLoosingFuelWhenItTurnsOn() = runBlocking {
         car.turnOn()
 
         assertEquals(5.5, car.fuel)
     }
 
     @Test
-    fun carIsTurningOnItsEngineAndIncreasesTheTemperature() = runBlockingTest {
+    fun carIsTurningOnItsEngineAndIncreasesTheTemperature() = runBlocking {
         car.turnOn()
         assertEquals(15, car.engine.temperature)
 
-        coroutinesTestRule.advanceTimeBy(1000)
+        coroutinesTestRule.advanceTimeBy(2000)
         assertEquals(25, car.engine.temperature)
-        coroutinesTestRule.advanceTimeBy(1000)
+        coroutinesTestRule.advanceTimeBy(2000)
         assertEquals(50, car.engine.temperature)
-        coroutinesTestRule.advanceTimeBy(1000)
+        coroutinesTestRule.advanceTimeBy(2000)
         assertEquals(95, car.engine.temperature)
 
         assertTrue(car.engine.isTurnedOn)
