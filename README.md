@@ -9,6 +9,7 @@
 * [7- Types of TDD](#6-Types-of-TDD)
 * [8- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
 * [9- Some useful resources related to TDD and Testing](#9-Some-useful-resources-related-to-TDD-and-Testing)
+* [10- Working Agile](#10-Working-Agile)
 
 ### 1-What Is TDD
 * Test driven development is a software development methodology inspired by Kent Beck in 2003 in which the test drive the development of the application.
@@ -140,5 +141,26 @@ https://www.youtube.com/watch?v=nDCCwyS0_MQ&t=58s
 * Unit Testing with Kotlin Coroutines 
 https://medium.com/swlh/kotlin-coroutines-in-android-unit-test-28ff280fc0d5 <br>
 https://medium.com/swlh/unit-testing-with-kotlin-coroutines-the-android-way-19289838d257
+
+#### Working Agile
+The most important principles of being agile.<br>
+What are the ways of being able to deliver a fast and high quality code.<br>
+As you are making next steps in your career you are realizing that the technical knowledge is not the only thing that a person needs in order to be effective and move on to the next level .<br>
+But it is rather a vast set of technical knowledge, principles and work ethics that shape you to be a strong professional.<br>
+As we discussed earlier when explaining TDD the end result is not the only thing that matters but also how you get there and how you keep improving. <br>
+So we are going to base the process of developing our application on the three following principles. 
+#### Clear Focus
+* First it it really important to always have a clear focus. 
+* We are going to work iteratively with the aim to deliver one simple feature at a time. 
+* Any thing else is not going to be our concern until this feature is delivered.
+#### No Overengineering YAGNI "You Aren't Gonna Need It"
+* As we were advancing from junior developers to senior developers , we are started learning a lot of cool things.like design patterns and ways to solve our problem in a generic way.
+* But in order to truly master software engineering, the next step is to understand when those design patterns or generic approaches are not currently needed in our system.
+* We often try to excuse the introduction of an overengineered approach by saying yes, but in the future we are going to need it.
+* The truth is that we are overcomplicating our system and we are violating the first principle instead of focusing how we deliver our feature ,we are focusing on what possibly might happen in the future.
+* If in the future we truly need it, then we can always refactor our system which leads to the third principle. 
+#### No Underengineering
+* When ever we try to introduce a new feature to our system, we should first investigate if the system is ready to accept this new feature and work in harmony.
+* If not then we need to take the time and refactor our system to bring it to a state that the introduction of the new feature is not going to brake the fundamental solid engineering principles.
 
 
