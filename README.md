@@ -8,6 +8,7 @@
 * [6- Types Of Automated Test](#5-Types-Of-Automated-Test)
 * [7- Types of TDD](#6-Types-of-TDD)
 * [8- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
+* [9- Some useful resources related to TDD and Testing](#9-Some-useful-resources-related-to-TDD-and-Testing)
 
 ### 1-What Is TDD
 * Test driven development is a software development methodology inspired by Kent Beck in 2003 in which the test drive the development of the application.
@@ -128,4 +129,12 @@ This can lead to a much faster refactored.
 ##### Cons
 * We are treating all the collaboating classes as white boxes , whichmeans we are also testing the implementation of them. This can lead to higher refactoring effort when we are changing the public API of the classes.
 * The second disadvantage of this flavour is that it might produce false positives which means that we might have a green test suit while a bug has managed to slip inside our code. This happens because the vast majority of the test are isolated unit test which prove that the specific unit is behaving properly , but they donot prove that the end result is correct.
+
+### 9-Some useful resources related to TDD and Testing
+* Mockito 3 - Introduction to Unit Testing <br> https://www.youtube.com/watch?v=53fncREn8k0&list=PL6Zs6LgrJj3vy7yWpH9xb3Y0I_pAPrvCU
+* Let's Play TDD <br> https://www.youtube.com/watch?v=F534zh9rsaA&list=PL0CCC6BD6AFF097B1
+* Android TDD Masterclass - Coroutines, Jetpack <br> https://www.udemy.com/course/android-11-tdd-masterclass/
+* The Ultimate Guide to Android Testing (Unit Tests, UI Tests, End-to-End Tests) - Clean Architecture <br>
+https://www.youtube.com/watch?v=EkfVL5vCDmo&list=PLQkwcJG4YTCSYJ13G4kVIJ10X5zisB2Lq <br> 
+https://www.youtube.com/watch?v=nDCCwyS0_MQ&t=58s
 
