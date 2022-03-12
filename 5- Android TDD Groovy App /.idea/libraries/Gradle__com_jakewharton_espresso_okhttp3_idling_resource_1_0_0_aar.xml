@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jakewharton.espresso:okhttp3-idling-resource:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/464d1f34fafa461fe70aebfc400f04bd/jetified-okhttp3-idling-resource-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/464d1f34fafa461fe70aebfc400f04bd/jetified-okhttp3-idling-resource-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/464d1f34fafa461fe70aebfc400f04bd/jetified-okhttp3-idling-resource-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.espresso/okhttp3-idling-resource/1.0.0/6ed6ac8b81b6311669c9fbc09dbc69d3ef6acca4/okhttp3-idling-resource-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.espresso/okhttp3-idling-resource/1.0.0/60c6b68460f84ade44de33323e4c7346e134eaf3/okhttp3-idling-resource-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
