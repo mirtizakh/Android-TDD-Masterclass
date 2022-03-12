@@ -1,4 +1,4 @@
-package petros.efthymiou.groovy
+package android.tddapp.groovy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

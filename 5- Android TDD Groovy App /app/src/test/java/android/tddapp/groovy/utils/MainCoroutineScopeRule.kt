@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package petros.efthymiou.groovy.utils
+package android.tddapp.groovy.utils
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

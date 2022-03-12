@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="petros.efthymiou.groovy">
+    package="android.tddapp.groovy">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Groovy">
-        <activity android:name=".MainActivity">
+        <activity android:name="android.tddapp.groovy.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

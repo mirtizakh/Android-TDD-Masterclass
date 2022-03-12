@@ -8,7 +8,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "petros.efthymiou.groovy"
+        applicationId "android.tddapp.groovy"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
