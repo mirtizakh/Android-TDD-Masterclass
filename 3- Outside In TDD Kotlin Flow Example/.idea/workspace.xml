@@ -68,9 +68,6 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.example.outsideintddexample.acceptancetests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/utils" />
       <recent name="$PROJECT_DIR$/app/src/test/java/com/example/outsideintddexample/acceptancetests" />
@@ -78,8 +75,12 @@
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="com.example.outsideintddexample" />
     </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.outsideintddexample.unit_test" />
+      <recent name="com.example.outsideintddexample.acceptancetests" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature">
+  <component name="RunManager" selected="Gradle.CarShould">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -146,6 +147,27 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarFeature" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.acceptance.CarFeature&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,7 +194,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.unittests.CarShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.unit_test.CarShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -188,33 +210,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CarShould.looseFuelWhenItTurnsOn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EngineShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.unittests.CarShould.looseFuelWhenItTurnsOn&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CarShould.turnOnItsEngine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.unittests.CarShould.turnOnItsEngine&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.unit_test.EngineShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -253,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature" />
-        <item itemvalue="Gradle.EngineShould.riseTheTemperatureGraduallyWhenItTurnsOn" />
         <item itemvalue="Gradle.CarShould" />
-        <item itemvalue="Gradle.CarShould.looseFuelWhenItTurnsOn" />
-        <item itemvalue="Gradle.CarShould.turnOnItsEngine" />
+        <item itemvalue="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature" />
+        <item itemvalue="Gradle.CarFeature" />
+        <item itemvalue="Gradle.EngineShould" />
+        <item itemvalue="Gradle.EngineShould.riseTheTemperatureGraduallyWhenItTurnsOn" />
       </list>
     </recent_temporary>
   </component>

@@ -10,7 +10,7 @@ import org.junit.Rule
 import org.junit.Test
 
 class CarFeature {
-    private val engine : Engine = Engine()
+    private val engine: Engine = Engine()
     private val car = Car(engine, 6.0)
 
     @get:Rule
@@ -26,9 +26,16 @@ class CarFeature {
     @Test
     fun carIsTurningOnItsEngineAndIncreasingTheTemperature() = runBlocking {
         car.turnOn()
+        assertEquals(15, car.engine.temperature)
+
+        coroutinesTestRule.advanceTimeBy(2000)
+        assertEquals(25, car.engine.temperature)
+        coroutinesTestRule.advanceTimeBy(2000)
+        assertEquals(50, car.engine.temperature)
+        coroutinesTestRule.advanceTimeBy(2000)
+        assertEquals(95, car.engine.temperature)
 
         assertTrue(car.engine.isTurnedOn)
-        assertEquals(95, car.engine.temperature)
     }
 
 }
