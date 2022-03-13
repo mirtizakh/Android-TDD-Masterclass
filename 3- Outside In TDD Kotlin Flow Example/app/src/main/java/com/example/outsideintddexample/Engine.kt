@@ -10,23 +10,28 @@ class Engine (
     var isTurnedOn: Boolean =false
 ) {
 
-
-    suspend fun turnOn() : Flow<Int> {
+    suspend fun turnOn() {
+        delay(5000)
+        temperature = 95
         isTurnedOn = true
-        return flow{
-            delay(2000)
-            temperature = 25
-            emit(temperature)
-
-            delay(2000)
-            temperature = 50
-            emit(temperature)
-
-            delay(2000)
-            temperature = 95
-            emit(temperature)
-
-            Log.d("TDD","Engine is turned on ")
-        }
     }
+
+//    suspend fun turnOn() : Flow<Int> {
+//        isTurnedOn = true
+//        return flow{
+//            delay(2000)
+//            temperature = 25
+//            emit(temperature)
+//
+//            delay(2000)
+//            temperature = 50
+//            emit(temperature)
+//
+//            delay(2000)
+//            temperature = 95
+//            emit(temperature)
+//
+//            Log.d("TDD","Engine is turned on ")
+//        }
+//    }
 }

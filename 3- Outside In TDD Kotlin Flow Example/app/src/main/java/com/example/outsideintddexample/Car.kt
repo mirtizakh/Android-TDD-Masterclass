@@ -14,10 +14,14 @@ class Car(
     fun turnOn() {
         fuel -= 0.5
 
+
         CoroutineScope(Dispatchers.Main).launch {
-            engine.turnOn().collect { temperature ->
-                Log.d("TDD", "temperature is increasing to $temperature")
-            }
+            engine.turnOn()
         }
+//        CoroutineScope(Dispatchers.Main).launch {
+//            engine.turnOn().collect { temperature ->
+//                Log.d("TDD", "temperature is increasing to $temperature")
+//            }
+//        }
     }
 }

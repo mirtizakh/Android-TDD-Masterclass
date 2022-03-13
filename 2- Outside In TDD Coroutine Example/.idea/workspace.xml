@@ -27,6 +27,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view />
       </state>
     </system>
@@ -60,7 +63,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1647016107208" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1647167249371" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -76,40 +79,8 @@
       <recent name="com.example.outsideintddexample" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CarShould.turnOnItsEngine">
+  <component name="RunManager" selected="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarShould" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OutsideInTDDExample.app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.outsideintddexample.unittests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.outsideintddexample.unittests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.outsideintddexample.unittests.CarShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EngineShould" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OutsideInTDDExample.app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.outsideintddexample.unittests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.outsideintddexample.unittests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.outsideintddexample.unittests.EngineShould" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -184,6 +155,27 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarFeature.carIsLoosingFuelWhenItTurnsOn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.acceptancetests.CarFeature.carIsLoosingFuelWhenItTurnsOn&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -226,10 +218,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="EngineShould.riseTheTemperatureWhenItTurnsOn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.unittests.EngineShould.riseTheTemperatureWhenItTurnsOn&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CarShould.turnOnItsEngine" />
         <item itemvalue="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature" />
+        <item itemvalue="Gradle.CarFeature.carIsLoosingFuelWhenItTurnsOn" />
+        <item itemvalue="Gradle.EngineShould.riseTheTemperatureWhenItTurnsOn" />
+        <item itemvalue="Gradle.CarShould.turnOnItsEngine" />
       </list>
     </recent_temporary>
   </component>

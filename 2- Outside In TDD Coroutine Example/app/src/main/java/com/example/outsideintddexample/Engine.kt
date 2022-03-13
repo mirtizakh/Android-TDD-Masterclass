@@ -12,6 +12,5 @@ class Engine (
         delay(5000)
         temperature = 95
         isTurnedOn = true
-
     }
 }

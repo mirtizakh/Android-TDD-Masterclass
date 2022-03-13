@@ -63,7 +63,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/example/outsideintddexample" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1647016107208" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1647193281289" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -79,7 +79,7 @@
       <recent name="com.example.outsideintddexample" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EngineShould.riseTheTemperatureGraduallyWhenItTurnsOn">
+  <component name="RunManager" selected="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -146,12 +146,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.acceptancetests.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outsideintddexample.acceptance.CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -253,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasingTheTemperature" />
         <item itemvalue="Gradle.EngineShould.riseTheTemperatureGraduallyWhenItTurnsOn" />
         <item itemvalue="Gradle.CarShould" />
         <item itemvalue="Gradle.CarShould.looseFuelWhenItTurnsOn" />
         <item itemvalue="Gradle.CarShould.turnOnItsEngine" />
-        <item itemvalue="Gradle.CarFeature.carIsTurningOnItsEngineAndIncreasesTheTemperature" />
       </list>
     </recent_temporary>
   </component>

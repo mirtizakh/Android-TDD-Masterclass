@@ -15,7 +15,7 @@ class CarShould {
 
     private val engine: Engine = mock()
 
-    private val car = Car(engine,5.0)
+    private val car = Car(engine, 5.0)
 
     /* In order to test the coroutine We need to add a testing rule
        This rule is going to ensure that we are using the test dispatcher to run our coroutine and
