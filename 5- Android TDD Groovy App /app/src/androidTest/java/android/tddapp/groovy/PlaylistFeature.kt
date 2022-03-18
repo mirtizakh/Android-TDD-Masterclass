@@ -12,11 +12,12 @@ import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions.assert
 import com.adevinta.android.barista.internal.matcher.DrawableMatcher.Companion.withDrawable
 import org.hamcrest.Description
 import org.hamcrest.Matcher
+import org.hamcrest.Matchers.allOf
 import org.hamcrest.TypeSafeMatcher
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.util.EnumSet.allOf
+
 
 @RunWith(AndroidJUnit4::class)
 class PlaylistFeature {
@@ -33,6 +34,8 @@ class PlaylistFeature {
     // Check the items in recyclerview
     @Test
     fun displaysListOfPlaylists() {
+        Thread.sleep(4000)
+
         assertRecyclerViewItemCount(R.id.playlists_list, 10)
 
         onView(
