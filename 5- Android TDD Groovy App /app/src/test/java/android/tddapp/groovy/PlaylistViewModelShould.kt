@@ -2,8 +2,14 @@ package android.tddapp.groovy
 
 import android.tddapp.groovy.utils.MainCoroutineScopeRule
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import io.mockk.coEvery
+import io.mockk.coVerify
+import io.mockk.mockk
 import io.mockk.spyk
-import io.mockk.verify
+import junit.framework.TestCase.assertEquals
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.runBlocking
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import petros.efthymiou.groovy.utils.getValueForTest
@@ -21,17 +27,37 @@ class PlaylistViewModelShould {
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
 
-    private val viewModel: PlaylistViewModel
+    private lateinit var viewModel: PlaylistViewModel
     private val mockRepository: PlaylistsRepository = spyk()
 
-    init {
+    private val mockPlayList = mockk<List<Playlist>>()
+    private val expected = Result.success(mockPlayList)
+
+    @Before
+    fun setup() {
+        runBlocking {
+            coEvery { mockRepository.getPlaylists() } returns flow {
+                emit(expected)
+            }
+        }
         viewModel = PlaylistViewModel(mockRepository)
     }
 
     @Test
     fun getPlaylistsFromTheRepository() {
-        viewModel.playlists.getValueForTest()
+        runBlocking {
+            viewModel.playlists.getValueForTest()
 
-        verify(exactly = 1) { mockRepository.getPlaylists() }
+            coVerify(exactly = 1) { mockRepository.getPlaylists() }
+        }
+
+    }
+
+    @Test
+    fun emitsPlaylistsFromRepository() {
+        runBlocking {
+            assertEquals(expected, viewModel.playlists.getValueForTest())
+        }
+
     }
 }
