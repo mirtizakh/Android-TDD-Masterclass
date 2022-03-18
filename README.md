@@ -5,7 +5,7 @@
 * [3- TDD Development Lifecycle](#3-TDD-Development-Lifecycle)
 * [4- 3 Rules Of TDD](#4-3-Rules-Of-TDD)
 * [5- Test Preconditions / Good Test](#5-Test-Preconditions-/-Good-Test)
-* [6- Types Of Automated Test](#5-Types-Of-Automated-Test)
+* [6- Types Of Automated Test](#6-Types-Of-Automated-Test)
 * [7- Types of TDD](#6-Types-of-TDD)
 * [8- Classicist vs Outside In TDD](#7-Classicist-vs-Outside-In-TDD)
 * [9- Some useful resources related to TDD and Testing](#9-Some-useful-resources-related-to-TDD-and-Testing)
@@ -61,7 +61,7 @@ The lifecycle can also be explained by the three rules of test driven developmen
 * The second rule is that you may not write more of a unit test than is sufficient to fail and having an apllication not compiling is failing.
 * Finally the third rule is that , you may not write more production code than is sufficient to pass the current failing test.
 
-### 5-Test Preconditions / Good Test
+### 5-Test Preconditions/Good Test
 
 * **Easy to write.** (Developer should not put a lot of effort to write the unit test)
 * **Readable.** (It should be readable by evey developer)
