@@ -1,6 +1,7 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
 
 import android.os.Bundle
+import android.tddapp.groovy.R
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

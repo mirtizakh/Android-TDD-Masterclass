@@ -2,6 +2,7 @@ package android.tddapp.groovy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.tddapp.groovy.playlists.PlaylistFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         if(savedInstanceState == null){
             supportFragmentManager.beginTransaction()
-                .add(R.id.container,PlaylistFragment.newInstance())
+                .add(R.id.container, PlaylistFragment.newInstance())
         }
     }
 }

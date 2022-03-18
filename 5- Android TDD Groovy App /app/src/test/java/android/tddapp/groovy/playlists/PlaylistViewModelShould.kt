@@ -1,7 +1,6 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
 
-import android.tddapp.groovy.utils.MainCoroutineScopeRule
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import android.tddapp.groovy.utils.BaseUnitTest
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
@@ -10,22 +9,10 @@ import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 import petros.efthymiou.groovy.utils.getValueForTest
 
-class PlaylistViewModelShould {
-
-    @get:Rule
-    val coroutinesTestRule = MainCoroutineScopeRule()
-
-    /*
-     InstantTaskExecutorRule is coming from livedata
-     This rule allowing the execution of the live data to happen instantly so we can use the values
-     in our test
-     */
-    @get:Rule
-    val instantTaskExecutorRule = InstantTaskExecutorRule()
+class PlaylistViewModelShould : BaseUnitTest() {
 
     private lateinit var viewModel: PlaylistViewModel
     private val mockRepository: PlaylistsRepository = spyk()

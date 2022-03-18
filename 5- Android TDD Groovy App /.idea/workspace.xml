@@ -52,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -86,11 +87,14 @@
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="android.tddapp.groovy" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="android.tddapp.groovy.playlists" />
+    </key>
     <key name="android.template.-1090792994">
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistViewModelShould">
+  <component name="RunManager" selected="Gradle.PlaylistViewModelShould.emitsPlaylistsFromRepository">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -155,7 +159,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.PlaylistViewModelShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistViewModelShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -176,7 +180,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.PlaylistViewModelShould.emitsPlaylistsFromRepository&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistViewModelShould.emitsPlaylistsFromRepository&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -197,7 +201,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.PlaylistViewModelShould.getPlaylistsFromTheRepository&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistViewModelShould.getPlaylistsFromTheRepository&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -215,9 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistViewModelShould.emitsPlaylistsFromRepository" />
+        <item itemvalue="Gradle.PlaylistViewModelShould" />
+        <item itemvalue="Gradle.PlaylistViewModelShould.getPlaylistsFromTheRepository" />
         <item itemvalue="Gradle.PlaylistViewModelShould" />
         <item itemvalue="Gradle.PlaylistViewModelShould.emitsPlaylistsFromRepository" />
-        <item itemvalue="Gradle.PlaylistViewModelShould.getPlaylistsFromTheRepository" />
       </list>
     </recent_temporary>
   </component>

@@ -1,4 +1,4 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
 
 import android.tddapp.groovy.databinding.PlaylistItemBinding
 import android.view.LayoutInflater

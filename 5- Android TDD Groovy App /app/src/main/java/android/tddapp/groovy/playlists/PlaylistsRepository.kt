@@ -1,4 +1,4 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
 
 import kotlinx.coroutines.flow.Flow
 

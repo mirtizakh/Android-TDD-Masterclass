@@ -1,4 +1,6 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
+
+import android.tddapp.groovy.R
 
 data class Playlist(
     val id: String,

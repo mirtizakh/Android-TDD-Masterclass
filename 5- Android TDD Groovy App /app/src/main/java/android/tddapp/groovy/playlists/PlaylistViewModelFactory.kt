@@ -1,4 +1,4 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
