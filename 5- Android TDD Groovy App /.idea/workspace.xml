@@ -69,7 +69,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/utils" />
     <property name="memory.settings.postsync.last.time.stamp" value="1647586659754" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -81,6 +81,9 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/utils" />
+    </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="android.tddapp.groovy" />
     </key>
