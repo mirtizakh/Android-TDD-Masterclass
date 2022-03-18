@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.adevinta.android:barista:4.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aa946e6d98ee4a1e4c9829b96580df39/transformed/jetified-barista-4.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aa946e6d98ee4a1e4c9829b96580df39/transformed/jetified-barista-4.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aa946e6d98ee4a1e4c9829b96580df39/transformed/jetified-barista-4.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adevinta.android/barista/4.2.0/67b1c05887fb164d53cf05e1020a445fade4032d/barista-4.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adevinta.android/barista/4.2.0/a5a8ca9888d092c3d94b6ee6ce05fdbb375194c4/barista-4.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
