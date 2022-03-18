@@ -1,11 +1,11 @@
 package android.tddapp.groovy
 
-import androidx.recyclerview.widget.RecyclerView
+import android.tddapp.groovy.databinding.PlaylistItemBinding
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.TextView
-import android.tddapp.groovy.databinding.PlaylistItemBinding
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
 class MyPlaylistRecyclerViewAdapter(
     private val values: List<Playlist>

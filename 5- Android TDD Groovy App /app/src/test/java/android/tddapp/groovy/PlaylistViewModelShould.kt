@@ -2,15 +2,11 @@ package android.tddapp.groovy
 
 import android.tddapp.groovy.utils.MainCoroutineScopeRule
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.nhaarman.mockitokotlin2.mock
-import com.nhaarman.mockitokotlin2.times
-import com.nhaarman.mockitokotlin2.verify
-import org.junit.Test
-
-import org.junit.Assert.*
+import io.mockk.spyk
+import io.mockk.verify
 import org.junit.Rule
+import org.junit.Test
 import petros.efthymiou.groovy.utils.getValueForTest
-
 
 class PlaylistViewModelShould {
 
@@ -25,18 +21,17 @@ class PlaylistViewModelShould {
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
 
-    private val viewModel : PlaylistViewModel
-    val mockRepository : PlaylistsRepository = mock()
+    private val viewModel: PlaylistViewModel
+    private val mockRepository: PlaylistsRepository = spyk()
 
     init {
-        viewModel = PlaylistViewModel()
-
-
+        viewModel = PlaylistViewModel(mockRepository)
     }
+
     @Test
     fun getPlaylistsFromTheRepository() {
         viewModel.playlists.getValueForTest()
 
-        verify(mockRepository,times(1)).getPlaylists()
+        verify(exactly = 1) { mockRepository.getPlaylists() }
     }
 }

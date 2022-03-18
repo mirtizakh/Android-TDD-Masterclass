@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Groovy">
-        <activity android:name="android.tddapp.groovy.MainActivity">
+        <activity android:name="android.tddapp.groovy.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
