@@ -38,6 +38,11 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    kotlinOptions {
+        freeCompilerArgs = ['-Xjvm-default=enable']
+        }
+
 }
 
 dependencies {
