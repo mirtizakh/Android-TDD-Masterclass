@@ -5,10 +5,10 @@ import kotlinx.coroutines.flow.flow
 
 class PlaylistsService(
     private val playlistsAPI: PlaylistsAPI
-){
+) {
     suspend fun fetchPlaylists(): Flow<Result<List<Playlists>>> {
-         playlistsAPI.fetchAllPlaylists()
-        return flow {  }
+
+        return flow { emit(Result.success(playlistsAPI.fetchAllPlaylists())) }
     }
 
 }

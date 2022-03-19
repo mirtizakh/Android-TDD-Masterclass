@@ -14,8 +14,8 @@ import org.junit.Test
 class PlaylistsRepositoryShould : BaseUnitTest() {
 
     private val mockService: PlaylistsService = spyk()
-    private val mockPlayList = mockk<List<Playlists>>()
-    private val expected = Result.success(mockPlayList)
+    private val mockPlayLists = mockk<List<Playlists>>()
+    private val expected = Result.success(mockPlayLists)
     private val exception = RuntimeException("Something went wrong")
 
     @Test
@@ -43,10 +43,10 @@ class PlaylistsRepositoryShould : BaseUnitTest() {
     fun emitsPlaylistsFromServiceWithExpectedList() {
         runBlocking {
             coEvery { mockService.fetchPlaylists() } returns flow {
-                emit(Result.success(mockPlayList))
+                emit(Result.success(mockPlayLists))
             }
             val repository = PlaylistsRepository(mockService)
-            TestCase.assertEquals(mockPlayList, repository.getPlaylists().first().getOrNull())
+            TestCase.assertEquals(mockPlayLists, repository.getPlaylists().first().getOrNull())
         }
     }
 
