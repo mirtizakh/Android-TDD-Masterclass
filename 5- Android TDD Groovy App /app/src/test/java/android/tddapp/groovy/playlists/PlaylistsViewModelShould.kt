@@ -4,7 +4,6 @@ import android.tddapp.groovy.utils.BaseUnitTest
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
-import io.mockk.spyk
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
@@ -14,7 +13,7 @@ import petros.efthymiou.groovy.utils.getValueForTest
 class PlaylistsViewModelShould : BaseUnitTest() {
 
     private lateinit var viewModel: PlaylistsViewModel
-    private val mockRepository: PlaylistsRepository = spyk()
+    private val mockRepository: PlaylistsRepository = mockk()
 
     private val mockPlayList = mockk<List<Playlists>>()
     private val expected = Result.success(mockPlayList)

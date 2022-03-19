@@ -40,7 +40,7 @@ class PlaylistsFeature {
 
         onView(
             allOf(
-                withId(R.id.playlist_name),
+                withId(R.id.playlists_name),
                 isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 0))
             )
         )
@@ -49,7 +49,7 @@ class PlaylistsFeature {
 
         onView(
             allOf(
-                withId(R.id.playlist_category),
+                withId(R.id.playlists_category),
                 isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 0))
             )
         )
@@ -58,7 +58,7 @@ class PlaylistsFeature {
 
         onView(
             allOf(
-                withId(R.id.playlist_image),
+                withId(R.id.playlists_image),
                 isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 0))
             )
         )

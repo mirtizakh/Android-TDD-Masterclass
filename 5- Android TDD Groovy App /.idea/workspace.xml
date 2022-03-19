@@ -5,6 +5,10 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -81,7 +85,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/utils" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1647586659754" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1647688057626" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -106,8 +110,8 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsServiceShould">
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+  <component name="RunManager" selected="Gradle.PlaylistsRepositoryShould">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -166,12 +170,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -187,12 +191,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistRepositoryShould.getPlayListsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould.getPlayListsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould.getPlayListsFromService&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.getPlayListsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -229,12 +233,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsServiceShould.convertValuesToFlowResultAndEmitsThem" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsViewModelShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsServiceShould.convertValuesToFlowResultAndEmitsThem&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -250,12 +254,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsServiceShould.fetchPlaylistsFromAPI" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsViewModelShould.getPlaylistsFromTheRepository" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsServiceShould.fetchPlaylistsFromAPI&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.getPlaylistsFromTheRepository&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -273,11 +277,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsRepositoryShould" />
+        <item itemvalue="Gradle.PlaylistsRepositoryShould.getPlayListsFromService" />
+        <item itemvalue="Gradle.PlaylistsViewModelShould" />
         <item itemvalue="Gradle.PlaylistsServiceShould" />
-        <item itemvalue="Gradle.PlaylistsServiceShould.convertValuesToFlowResultAndEmitsThem" />
-        <item itemvalue="Gradle.PlaylistsServiceShould.fetchPlaylistsFromAPI" />
-        <item itemvalue="Gradle.PlaylistRepositoryShould" />
-        <item itemvalue="Gradle.PlaylistRepositoryShould.getPlayListsFromService" />
+        <item itemvalue="Gradle.PlaylistsViewModelShould.getPlaylistsFromTheRepository" />
       </list>
     </recent_temporary>
   </component>
@@ -302,5 +306,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/MainActivity.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsService.kt</url>
+          <line>11</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsService.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

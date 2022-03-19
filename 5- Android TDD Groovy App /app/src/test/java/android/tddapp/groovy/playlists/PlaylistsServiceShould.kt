@@ -4,17 +4,15 @@ import android.tddapp.groovy.utils.BaseUnitTest
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
-import io.mockk.spyk
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
-import java.lang.RuntimeException
 
 class PlaylistsServiceShould : BaseUnitTest() {
 
     private val mockPlaylists: List<Playlists> = mockk()
-    private val mockPlaylistsAPI = spyk<PlaylistsAPI>()
+    private val mockPlaylistsAPI = mockk<PlaylistsAPI>()
 
     @Test
     fun fetchPlaylistsFromAPI() {
@@ -26,20 +24,23 @@ class PlaylistsServiceShould : BaseUnitTest() {
     }
 
     @Test
-    fun convertValuesToFlowResultAndEmitsThem(){
+    fun convertValuesToFlowResultAndEmitsThem() {
         runBlocking {
             coEvery { mockPlaylistsAPI.fetchAllPlaylists() } returns mockPlaylists
             val service = PlaylistsService(mockPlaylistsAPI)
-            assertEquals(Result.success(mockPlaylists),service.fetchPlaylists().first())
+            assertEquals(Result.success(mockPlaylists), service.fetchPlaylists().first())
         }
     }
 
     @Test
-    fun emitsErrorResultsWhenNetworkFails(){
+    fun emitsErrorResultsWhenNetworkFails() {
         runBlocking {
             coEvery { mockPlaylistsAPI.fetchAllPlaylists() } throws RuntimeException("Network exception")
             val service = PlaylistsService(mockPlaylistsAPI)
-            assertEquals("Something went wrong",service.fetchPlaylists().first().exceptionOrNull()!!.message)
+            assertEquals(
+                "Something went wrong",
+                service.fetchPlaylists().first().exceptionOrNull()!!.message
+            )
         }
     }
 
