@@ -2,12 +2,12 @@ package android.tddapp.groovy.playlists
 
 import androidx.lifecycle.*
 
-class PlaylistViewModel(
+class PlaylistsViewModel(
     private val repository: PlaylistsRepository
 ) : ViewModel() {
 
     // We are using live data builder here
-    val playlists = liveData<Result<List<Playlist>>> {
+    val playlists = liveData<Result<List<Playlists>>> {
         emitSource(repository.getPlaylists().asLiveData())
     }
 

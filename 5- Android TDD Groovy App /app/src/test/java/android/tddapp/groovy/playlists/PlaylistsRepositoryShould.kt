@@ -11,10 +11,10 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
 
-class PlaylistRepositoryShould : BaseUnitTest() {
+class PlaylistsRepositoryShould : BaseUnitTest() {
 
     private val mockService: PlaylistsService = spyk()
-    private val mockPlayList = mockk<List<Playlist>>()
+    private val mockPlayList = mockk<List<Playlists>>()
     private val expected = Result.success(mockPlayList)
     private val exception = RuntimeException("Something went wrong")
 

@@ -106,7 +106,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistRepositoryShould">
+  <component name="RunManager" selected="Gradle.PlaylistsServiceShould.fetchPlaylistsFromAPI">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -250,12 +250,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistViewModelShould.emitsPlaylistsFromRepository" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsServiceShould.fetchPlaylistsFromAPI" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistViewModelShould.emitsPlaylistsFromRepository&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsServiceShould.fetchPlaylistsFromAPI&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -273,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsServiceShould.fetchPlaylistsFromAPI" />
         <item itemvalue="Gradle.PlaylistRepositoryShould" />
         <item itemvalue="Gradle.PlaylistRepositoryShould.getPlayListsFromService" />
         <item itemvalue="Gradle.PlaylistRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" />
         <item itemvalue="Gradle.PlaylistRepositoryShould.emitsPlaylistsFromService" />
-        <item itemvalue="Gradle.PlaylistViewModelShould.emitsPlaylistsFromRepository" />
       </list>
     </recent_temporary>
   </component>

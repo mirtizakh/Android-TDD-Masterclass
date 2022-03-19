@@ -11,11 +11,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class PlaylistFragment : Fragment() {
+class PlaylistsFragment : Fragment() {
 
-    lateinit var playlistViewModel: PlaylistViewModel
-    lateinit var playlistViewModelFactory: PlaylistViewModelFactory
-    private val service = PlaylistsService()
+    lateinit var playlistViewModel: PlaylistsViewModel
+    lateinit var playlistViewModelFactory: PlaylistsViewModelFactory
+    private val service = PlaylistsService(object:PlaylistsAPI{})
     private val repository = PlaylistsRepository(service)
 
     override fun onCreateView(
@@ -38,24 +38,24 @@ class PlaylistFragment : Fragment() {
 
     private fun setupAdapter(
         view: View?,
-        playlists: List<Playlist>
+        playlists: List<Playlists>
     ) {
         with(view as RecyclerView) {
             layoutManager = LinearLayoutManager(context)
-            adapter = MyPlaylistRecyclerViewAdapter(playlists)
+            adapter = MyPlaylistsRecyclerViewAdapter(playlists)
         }
     }
 
     private fun setupViewModel() {
-        playlistViewModelFactory = PlaylistViewModelFactory(repository)
+        playlistViewModelFactory = PlaylistsViewModelFactory(repository)
         playlistViewModel =
-            ViewModelProvider(this, playlistViewModelFactory).get(PlaylistViewModel::class.java)
+            ViewModelProvider(this, playlistViewModelFactory).get(PlaylistsViewModel::class.java)
     }
 
     companion object {
 
         @JvmStatic
         fun newInstance() =
-            PlaylistFragment().apply {}
+            PlaylistsFragment().apply {}
     }
 }

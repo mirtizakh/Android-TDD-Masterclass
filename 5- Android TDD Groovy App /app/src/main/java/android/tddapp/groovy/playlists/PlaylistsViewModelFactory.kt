@@ -3,7 +3,7 @@ package android.tddapp.groovy.playlists
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
-class PlaylistViewModelFactory(
+class PlaylistsViewModelFactory(
     private val repository: PlaylistsRepository
 )
     : ViewModelProvider.Factory {
@@ -11,9 +11,9 @@ class PlaylistViewModelFactory(
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
 
         if (modelClass.isAssignableFrom(
-                PlaylistViewModel::class.java)) {
+                PlaylistsViewModel::class.java)) {
 
-            return PlaylistViewModel(repository) as T
+            return PlaylistsViewModel(repository) as T
         }
 
         throw IllegalArgumentException("Unknown ViewModel class")

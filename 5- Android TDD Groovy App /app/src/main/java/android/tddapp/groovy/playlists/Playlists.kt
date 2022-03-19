@@ -2,7 +2,7 @@ package android.tddapp.groovy.playlists
 
 import android.tddapp.groovy.R
 
-data class Playlist(
+data class Playlists(
     val id: String,
     val name: String,
     val category: String,

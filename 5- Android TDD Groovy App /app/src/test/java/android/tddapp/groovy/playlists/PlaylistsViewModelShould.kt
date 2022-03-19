@@ -11,22 +11,22 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Test
 import petros.efthymiou.groovy.utils.getValueForTest
 
-class PlaylistViewModelShould : BaseUnitTest() {
+class PlaylistsViewModelShould : BaseUnitTest() {
 
-    private lateinit var viewModel: PlaylistViewModel
+    private lateinit var viewModel: PlaylistsViewModel
     private val mockRepository: PlaylistsRepository = spyk()
 
-    private val mockPlayList = mockk<List<Playlist>>()
+    private val mockPlayList = mockk<List<Playlists>>()
     private val expected = Result.success(mockPlayList)
     private val exception = RuntimeException("Something went wrong")
 
-    fun mockSuccessfulCase(): PlaylistViewModel {
+    fun mockSuccessfulCase(): PlaylistsViewModel {
         runBlocking {
             coEvery { mockRepository.getPlaylists() } returns flow {
                 emit(expected)
             }
         }
-        return PlaylistViewModel(mockRepository)
+        return PlaylistsViewModel(mockRepository)
     }
 
     @Test
@@ -55,7 +55,7 @@ class PlaylistViewModelShould : BaseUnitTest() {
                 emit(Result.failure(exception))
             }
 
-            viewModel = PlaylistViewModel(mockRepository)
+            viewModel = PlaylistsViewModel(mockRepository)
             assertEquals(exception, viewModel.playlists.getValueForTest()!!.exceptionOrNull())
         }
 
