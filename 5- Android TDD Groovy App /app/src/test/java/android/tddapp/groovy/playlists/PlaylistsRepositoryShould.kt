@@ -13,7 +13,7 @@ import org.junit.Test
 
 class PlaylistsRepositoryShould : BaseUnitTest() {
 
-   
+
     private val mockService: PlaylistsService = mockk(relaxed = true)
     private val mockPlayLists = mockk<List<Playlists>>()
 

@@ -5,12 +5,14 @@ import android.tddapp.groovy.R
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.fragment_playlist.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -29,6 +31,10 @@ class PlaylistsFragment : Fragment() {
 
         setupViewModel()
 
+        playlistViewModel.loader.observe(this as LifecycleOwner) { loading ->
+            loader.isVisible = loading
+        }
+        
         playlistViewModel.playlists.observe(this as LifecycleOwner) { playlists ->
             if (playlists.getOrNull() != null)
                 setupAdapter(view, playlists.getOrNull()!!)
