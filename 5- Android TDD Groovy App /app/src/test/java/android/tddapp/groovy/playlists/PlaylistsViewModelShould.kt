@@ -8,6 +8,7 @@ import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
+import petros.efthymiou.groovy.utils.captureValues
 import petros.efthymiou.groovy.utils.getValueForTest
 
 class PlaylistsViewModelShould : BaseUnitTest() {
@@ -53,9 +54,19 @@ class PlaylistsViewModelShould : BaseUnitTest() {
             coEvery { mockRepository.getPlaylists() } returns flow {
                 emit(Result.failure(exception))
             }
-
             viewModel = PlaylistsViewModel(mockRepository)
             assertEquals(exception, viewModel.playlists.getValueForTest()!!.exceptionOrNull())
+        }
+    }
+
+    @Test
+    fun showProgressBarWhileLoading() {
+        runBlocking {
+            viewModel = mockSuccessfulCase()
+            viewModel.loader.captureValues {
+                viewModel.playlists.getValueForTest()
+                assertEquals(true, values[0])
+            }
         }
 
     }

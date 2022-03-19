@@ -34,7 +34,7 @@ class PlaylistsFragment : Fragment() {
         playlistViewModel.loader.observe(this as LifecycleOwner) { loading ->
             loader.isVisible = loading
         }
-        
+
         playlistViewModel.playlists.observe(this as LifecycleOwner) { playlists ->
             if (playlists.getOrNull() != null)
                 setupAdapter(view, playlists.getOrNull()!!)

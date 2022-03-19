@@ -110,7 +110,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsRepositoryShould">
+  <component name="RunManager" selected="Gradle.PlaylistsViewModelShould.showProgressBarWhileLoading">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -254,12 +254,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsViewModelShould.getPlaylistsFromTheRepository" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsViewModelShould.showProgressBarWhileLoading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.getPlaylistsFromTheRepository&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.showProgressBarWhileLoading&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -277,11 +277,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsViewModelShould.showProgressBarWhileLoading" />
         <item itemvalue="Gradle.PlaylistsRepositoryShould" />
         <item itemvalue="Gradle.PlaylistsRepositoryShould.getPlayListsFromService" />
         <item itemvalue="Gradle.PlaylistsViewModelShould" />
         <item itemvalue="Gradle.PlaylistsServiceShould" />
-        <item itemvalue="Gradle.PlaylistsViewModelShould.getPlaylistsFromTheRepository" />
       </list>
     </recent_temporary>
   </component>
@@ -312,12 +312,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt</url>
-          <line>29</line>
+          <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt</url>
-          <line>39</line>
+          <line>38</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">

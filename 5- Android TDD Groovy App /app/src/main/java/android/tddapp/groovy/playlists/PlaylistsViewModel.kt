@@ -1,5 +1,6 @@
 package android.tddapp.groovy.playlists
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.liveData
@@ -8,8 +9,11 @@ class PlaylistsViewModel(
     private val repository: PlaylistsRepository
 ) : ViewModel() {
 
+    val loader = MutableLiveData<Boolean>()
+
     // We are using live data builder here
     val playlists = liveData<Result<List<Playlists>>> {
+        loader.postValue(true)
         emitSource(repository.getPlaylists().asLiveData())
     }
 
