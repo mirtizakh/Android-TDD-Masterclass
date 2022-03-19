@@ -10,14 +10,24 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class PlaylistsFragment : Fragment() {
 
     lateinit var playlistViewModel: PlaylistsViewModel
     lateinit var playlistViewModelFactory: PlaylistsViewModelFactory
-    private val service = PlaylistsService(object:PlaylistsAPI{})
-    private val repository = PlaylistsRepository(service)
 
+    private val retrofit = Retrofit.Builder()
+        .baseUrl("http://127.0.0.1:3000/")
+        .client(OkHttpClient())
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    private val api = retrofit.create(PlaylistsAPI::class.java)
+    private val service = PlaylistsService(api)
+    private val repository = PlaylistsRepository(service)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

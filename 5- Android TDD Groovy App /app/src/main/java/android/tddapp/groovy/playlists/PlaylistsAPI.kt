@@ -1,8 +1,10 @@
 package android.tddapp.groovy.playlists
 
+import retrofit2.http.GET
+
 interface PlaylistsAPI {
-    fun fetchAllPlaylists() : List<Playlists>{
-       TODO("Not yet")
-    }
+
+    @GET("playlists")
+    fun fetchAllPlaylists() : List<Playlists>
 
 }
