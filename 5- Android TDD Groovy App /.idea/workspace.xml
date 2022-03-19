@@ -23,6 +23,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -103,7 +106,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistRepositoryShould.getPlayListsFromService">
+  <component name="RunManager" selected="Gradle.PlaylistRepositoryShould">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -163,12 +166,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistRepositoryShould.getPlayListsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould.getPlayListsFromService&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -184,12 +187,54 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistViewModelShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistRepositoryShould.emitsPlaylistsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistViewModelShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould.emitsPlaylistsFromService&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PlaylistRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould.emitsPlaylistsFromServiceWithExpectedList&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PlaylistRepositoryShould.getPlayListsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistRepositoryShould.getPlayListsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -226,34 +271,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistViewModelShould.getPlaylistsFromTheRepository" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistViewModelShould.getPlaylistsFromTheRepository&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistRepositoryShould" />
         <item itemvalue="Gradle.PlaylistRepositoryShould.getPlayListsFromService" />
+        <item itemvalue="Gradle.PlaylistRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" />
+        <item itemvalue="Gradle.PlaylistRepositoryShould.emitsPlaylistsFromService" />
         <item itemvalue="Gradle.PlaylistViewModelShould.emitsPlaylistsFromRepository" />
-        <item itemvalue="Gradle.PlaylistViewModelShould" />
-        <item itemvalue="Gradle.PlaylistViewModelShould.getPlaylistsFromTheRepository" />
-        <item itemvalue="Gradle.PlaylistViewModelShould" />
       </list>
     </recent_temporary>
   </component>
