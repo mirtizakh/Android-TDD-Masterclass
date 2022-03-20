@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_playlist.*
+import kotlinx.android.synthetic.main.fragment_playlist.view.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -37,7 +38,7 @@ class PlaylistsFragment : Fragment() {
 
         playlistViewModel.playlists.observe(this as LifecycleOwner) { playlists ->
             if (playlists.getOrNull() != null)
-                setupAdapter(view, playlists.getOrNull()!!)
+                setupAdapter(view.playlists_list, playlists.getOrNull()!!)
             else {
                 // TODO
             }

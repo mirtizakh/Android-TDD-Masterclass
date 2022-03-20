@@ -15,33 +15,22 @@ class PlaylistsViewModelShould : BaseUnitTest() {
 
     private lateinit var viewModel: PlaylistsViewModel
     private val mockRepository: PlaylistsRepository = mockk()
-
     private val mockPlayList = mockk<List<Playlists>>()
     private val expected = Result.success(mockPlayList)
     private val exception = RuntimeException("Something went wrong")
 
-    fun mockSuccessfulCase(): PlaylistsViewModel {
-        runBlocking {
-            coEvery { mockRepository.getPlaylists() } returns flow {
-                emit(expected)
-            }
-        }
-        return PlaylistsViewModel(mockRepository)
-    }
-
     @Test
-    fun getPlaylistsFromTheRepository() {
+    private fun getPlaylistsFromTheRepository() {
         viewModel = mockSuccessfulCase()
         runBlocking {
             viewModel.playlists.getValueForTest()
 
             coVerify(exactly = 1) { mockRepository.getPlaylists() }
         }
-
     }
 
     @Test
-    fun emitsPlaylistsFromRepository() {
+    private fun emitsPlaylistsFromRepository() {
         viewModel = mockSuccessfulCase()
         runBlocking {
             assertEquals(expected, viewModel.playlists.getValueForTest())
@@ -49,18 +38,16 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     }
 
     @Test
-    fun emitErrorWhenReceiveError() {
+    private fun emitErrorWhenReceiveError() {
         runBlocking {
-            coEvery { mockRepository.getPlaylists() } returns flow {
-                emit(Result.failure(exception))
-            }
-            viewModel = PlaylistsViewModel(mockRepository)
+            viewModel = mockErrorCase()
             assertEquals(exception, viewModel.playlists.getValueForTest()!!.exceptionOrNull())
         }
+
     }
 
     @Test
-    fun showProgressBarWhileLoading() {
+    private fun showProgressBarWhileLoading() {
         runBlocking {
             viewModel = mockSuccessfulCase()
             viewModel.loader.captureValues {
@@ -68,6 +55,45 @@ class PlaylistsViewModelShould : BaseUnitTest() {
                 assertEquals(true, values[0])
             }
         }
+    }
 
+    @Test
+    private fun hideProgressBarAfterPlaylistsFetchIsCompleted() {
+        runBlocking {
+            viewModel = mockSuccessfulCase()
+            viewModel.loader.captureValues {
+                viewModel.playlists.getValueForTest()
+                assertEquals(false, values.last())
+            }
+        }
+    }
+
+    @Test
+    private fun hideProgressBarAfterError() {
+        runBlocking {
+            viewModel = mockErrorCase()
+            viewModel.loader.captureValues {
+                viewModel.playlists.getValueForTest()
+                assertEquals(false, values.last())
+            }
+        }
+    }
+
+    private fun mockErrorCase() : PlaylistsViewModel{
+        return runBlocking {
+            coEvery { mockRepository.getPlaylists() } returns flow {
+                emit(Result.failure(exception))
+            }
+            PlaylistsViewModel(mockRepository)
+        }
+    }
+
+    private fun mockSuccessfulCase(): PlaylistsViewModel {
+        runBlocking {
+            coEvery { mockRepository.getPlaylists() } returns flow {
+                emit(expected)
+            }
+        }
+        return PlaylistsViewModel(mockRepository)
     }
 }
