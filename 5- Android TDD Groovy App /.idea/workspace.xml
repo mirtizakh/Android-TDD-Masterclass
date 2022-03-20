@@ -112,7 +112,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsMapperShould.keepSamePlaylistsId">
+  <component name="RunManager" selected="Gradle.PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -172,6 +172,27 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlaylistsMapperShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="PlaylistsMapperShould.keepSamePlaylistsId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -193,12 +214,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsMapperShould.keepSamePlaylistsName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.keepSamePlaylistsName&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -214,12 +235,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -235,33 +256,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsRepositoryShould.getPlayListsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.getPlayListsFromService&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PlaylistsRepositoryShould.propagateErrors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.propagateErrors&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -279,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock" />
+        <item itemvalue="Gradle.PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock" />
+        <item itemvalue="Gradle.PlaylistsMapperShould" />
+        <item itemvalue="Gradle.PlaylistsMapperShould.keepSamePlaylistsName" />
         <item itemvalue="Gradle.PlaylistsMapperShould.keepSamePlaylistsId" />
-        <item itemvalue="Gradle.PlaylistsRepositoryShould" />
-        <item itemvalue="Gradle.PlaylistsRepositoryShould.getPlayListsFromService" />
-        <item itemvalue="Gradle.PlaylistsRepositoryShould.propagateErrors" />
-        <item itemvalue="Gradle.PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" />
       </list>
     </recent_temporary>
   </component>
