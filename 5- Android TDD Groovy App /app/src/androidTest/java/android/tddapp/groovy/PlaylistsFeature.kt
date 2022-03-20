@@ -1,30 +1,18 @@
 package android.tddapp.groovy
 
-import android.view.View
-import android.view.ViewGroup
+import android.tddapp.groovy.playlists.idlingResource
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.ext.junit.rules.ActivityScenarioRule
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.adevinta.android.barista.assertion.BaristaRecyclerViewAssertions.assertRecyclerViewItemCount
 import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions.assertDisplayed
 import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions.assertNotDisplayed
 import com.adevinta.android.barista.internal.matcher.DrawableMatcher.Companion.withDrawable
-import org.hamcrest.Description
-import org.hamcrest.Matcher
 import org.hamcrest.Matchers.allOf
-import org.hamcrest.TypeSafeMatcher
-import org.junit.Rule
 import org.junit.Test
-import org.junit.runner.RunWith
 
-
-@RunWith(AndroidJUnit4::class)
-class PlaylistsFeature {
-
-    val activityRule = ActivityScenarioRule(MainActivity::class.java)
-        @Rule get
+class PlaylistsFeature : BaseUITest() {
 
     // Check the title of MainActivity
     @Test
@@ -35,8 +23,6 @@ class PlaylistsFeature {
     // Check the items in recyclerview
     @Test
     fun displaysListOfPlaylists() {
-        Thread.sleep(4000)
-
         assertRecyclerViewItemCount(R.id.playlists_list, 10)
 
         onView(
@@ -69,19 +55,26 @@ class PlaylistsFeature {
 
     @Test
     fun displayLoaderWhileFetchingThePlaylists() {
+        /*
+         This test is failing because we expect to display the loader while fetching the playlists.
+         This is actually happening because our idling resource is causing the thread to sleep until we get
+         the result of the playlists from the API while the thread is sleeping .
+         While the thread is sleeping we cannot perform the assertions .
+         So in this case we don't want to block the execution of our test while we are fetching
+         the playlists from the API.
+         So we need to add   IdlingRegistry.getInstance().unregister(idlingResource)
+         */
+        IdlingRegistry.getInstance().unregister(idlingResource)
         assertDisplayed(R.id.loader)
     }
 
     @Test
     fun hideLoaderWhileFetchingThePlaylistsIsCompleted() {
-        Thread.sleep(5000)
         assertNotDisplayed(R.id.loader)
     }
 
     @Test
     fun displayRockImageForRockListsItems() {
-        Thread.sleep(4000)
-
         onView(
             allOf(
                 withId(R.id.playlists_image),
@@ -99,24 +92,6 @@ class PlaylistsFeature {
         )
             .check(matches(withDrawable(R.drawable.rock)))
             .check(matches(isDisplayed()))
-    }
-
-    fun nthChildOf(parentMatcher: Matcher<View>, childPosition: Int): Matcher<View> {
-        return object : TypeSafeMatcher<View>() {
-            override fun describeTo(description: Description) {
-                description.appendText("position $childPosition of parent ")
-                parentMatcher.describeTo(description)
-            }
-
-            public override fun matchesSafely(view: View): Boolean {
-                if (view.parent !is ViewGroup) return false
-                val parent = view.parent as ViewGroup
-
-                return (parentMatcher.matches(parent)
-                        && parent.childCount > childPosition
-                        && parent.getChildAt(childPosition) == view)
-            }
-        }
     }
 
 }

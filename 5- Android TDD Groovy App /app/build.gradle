@@ -81,7 +81,7 @@ dependencies {
     androidTestImplementation('com.adevinta.android:barista:4.2.0') {
         exclude group: 'org.jetbrains.kotlin' // Only if you already use Kotlin in your project
     }
-
+    androidTestImplementation 'com.jakewharton.espresso:okhttp3-idling-resource:1.0.0'
     implementation "com.google.dagger:hilt-android:2.38.1"
     kapt "com.google.dagger:hilt-compiler:2.38.1"
 }
