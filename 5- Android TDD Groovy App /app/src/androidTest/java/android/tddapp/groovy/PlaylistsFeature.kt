@@ -3,6 +3,7 @@ package android.tddapp.groovy
 import android.tddapp.groovy.playlists.idlingResource
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import com.adevinta.android.barista.assertion.BaristaRecyclerViewAssertions.assertRecyclerViewItemCount
@@ -94,4 +95,16 @@ class PlaylistsFeature : BaseUITest() {
             .check(matches(isDisplayed()))
     }
 
+    @Test
+    fun navigateToDetailScreen() {
+        onView(
+            allOf(
+                withId(R.id.playlists_image),
+                isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 0))
+            )
+        )
+            .perform(click())
+
+        assertDisplayed(R.id.fragment_playlists_details_root)
+    }
 }

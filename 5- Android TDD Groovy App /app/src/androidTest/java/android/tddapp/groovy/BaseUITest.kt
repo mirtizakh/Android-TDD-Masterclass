@@ -21,12 +21,12 @@ open class BaseUITest {
         @Rule get
 
     @Before
-    fun setup(){
+    fun setup() {
         IdlingRegistry.getInstance().register(idlingResource)
     }
 
     @After
-    fun tearDown(){
+    fun tearDown() {
         IdlingRegistry.getInstance().unregister(idlingResource)
     }
 
