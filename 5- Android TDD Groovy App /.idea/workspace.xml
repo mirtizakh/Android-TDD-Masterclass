@@ -84,7 +84,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/utils" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="memory.settings.postsync.last.time.stamp" value="1647688057626" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -97,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/utils" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
@@ -110,7 +112,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsViewModelShould">
+  <component name="RunManager" selected="Gradle.PlaylistsRepositoryShould">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -170,12 +172,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistsViewModelShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -191,12 +193,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsViewModelShould.emitErrorWhenReceiveError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould.emitsPlaylistsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.emitErrorWhenReceiveError&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.emitsPlaylistsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -212,12 +214,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsViewModelShould.hideProgressBarAfterError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.hideProgressBarAfterError&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -233,12 +235,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsViewModelShould.hideProgressBarAfterPlaylistsFetchIsCompleted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould.getPlayListsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.hideProgressBarAfterPlaylistsFetchIsCompleted&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.getPlayListsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -254,12 +256,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsViewModelShould.showProgressBarWhileLoading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould.propagateErrors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.showProgressBarWhileLoading&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.propagateErrors&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -277,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PlaylistsViewModelShould" />
-        <item itemvalue="Gradle.PlaylistsViewModelShould.hideProgressBarAfterError" />
-        <item itemvalue="Gradle.PlaylistsViewModelShould.emitErrorWhenReceiveError" />
-        <item itemvalue="Gradle.PlaylistsViewModelShould.hideProgressBarAfterPlaylistsFetchIsCompleted" />
-        <item itemvalue="Gradle.PlaylistsViewModelShould.showProgressBarWhileLoading" />
+        <item itemvalue="Gradle.PlaylistsRepositoryShould" />
+        <item itemvalue="Gradle.PlaylistsRepositoryShould.getPlayListsFromService" />
+        <item itemvalue="Gradle.PlaylistsRepositoryShould.propagateErrors" />
+        <item itemvalue="Gradle.PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" />
+        <item itemvalue="Gradle.PlaylistsRepositoryShould.emitsPlaylistsFromService" />
       </list>
     </recent_temporary>
   </component>

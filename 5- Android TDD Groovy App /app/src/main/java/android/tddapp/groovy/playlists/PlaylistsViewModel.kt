@@ -15,8 +15,7 @@ class PlaylistsViewModel(
     // We are using live data builder here
     val playlists = liveData<Result<List<Playlists>>> {
         loader.postValue(true)
-        emitSource(repository.getPlaylists().
-        onEach {
+        emitSource(repository.getPlaylists().onEach {
             loader.postValue(false)
         }.asLiveData())
     }

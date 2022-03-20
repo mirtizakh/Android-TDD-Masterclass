@@ -11,7 +11,7 @@ import org.junit.Test
 
 class PlaylistsServiceShould : BaseUnitTest() {
 
-    private val mockPlaylists: List<Playlists> = mockk()
+    private val mockPlaylists: List<PlaylistsRaw> = mockk()
     private val mockPlaylistsAPI = mockk<PlaylistsAPI>()
 
     @Test

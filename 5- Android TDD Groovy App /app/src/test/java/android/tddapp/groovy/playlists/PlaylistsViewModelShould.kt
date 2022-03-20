@@ -79,7 +79,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
         }
     }
 
-    private fun mockErrorCase() : PlaylistsViewModel{
+    private fun mockErrorCase(): PlaylistsViewModel {
         return runBlocking {
             coEvery { mockRepository.getPlaylists() } returns flow {
                 emit(Result.failure(exception))

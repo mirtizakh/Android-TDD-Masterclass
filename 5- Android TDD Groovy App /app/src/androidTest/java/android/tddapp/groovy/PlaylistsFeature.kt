@@ -51,7 +51,7 @@ class PlaylistsFeature {
         onView(
             allOf(
                 withId(R.id.playlists_category),
-                isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 0))
+                isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 1))
             )
         )
             .check(matches(withText("rock")))
@@ -76,6 +76,29 @@ class PlaylistsFeature {
     fun hideLoaderWhileFetchingThePlaylistsIsCompleted() {
         Thread.sleep(5000)
         assertNotDisplayed(R.id.loader)
+    }
+
+    @Test
+    fun displayRockImageForRockListsItems() {
+        Thread.sleep(4000)
+
+        onView(
+            allOf(
+                withId(R.id.playlists_image),
+                isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 0))
+            )
+        )
+            .check(matches(withDrawable(R.drawable.rock)))
+            .check(matches(isDisplayed()))
+
+        onView(
+            allOf(
+                withId(R.id.playlists_image),
+                isDescendantOfA(nthChildOf(withId(R.id.playlists_list), 3))
+            )
+        )
+            .check(matches(withDrawable(R.drawable.rock)))
+            .check(matches(isDisplayed()))
     }
 
     fun nthChildOf(parentMatcher: Matcher<View>, childPosition: Int): Matcher<View> {

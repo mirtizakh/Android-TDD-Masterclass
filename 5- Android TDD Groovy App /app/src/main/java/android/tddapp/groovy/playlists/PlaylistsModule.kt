@@ -13,10 +13,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 class PlaylistsModule {
 
     @Provides
-    fun playlistsAPI(retrofit: Retrofit) = retrofit.create(PlaylistsAPI::class.java)
+    fun playlistsAPI(retrofit: Retrofit): PlaylistsAPI = retrofit.create(PlaylistsAPI::class.java)
 
     @Provides
-    fun retrofit() = Retrofit.Builder()
+    fun retrofit(): Retrofit = Retrofit.Builder()
         .baseUrl("http://192.168.0.169:3000/")
         .client(OkHttpClient())
         .addConverterFactory(GsonConverterFactory.create())

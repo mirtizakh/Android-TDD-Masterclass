@@ -14,7 +14,6 @@ class PlaylistsViewModelFactory @Inject constructor(
                 PlaylistsViewModel::class.java
             )
         ) {
-
             return PlaylistsViewModel(repository) as T
         }
 
