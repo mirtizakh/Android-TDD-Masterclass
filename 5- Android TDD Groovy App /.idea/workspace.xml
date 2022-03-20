@@ -112,7 +112,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsRepositoryShould">
+  <component name="RunManager" selected="Gradle.PlaylistsMapperShould.keepSamePlaylistsId">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -172,12 +172,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistsRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsMapperShould.keepSamePlaylistsId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.keepSamePlaylistsId&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -193,12 +193,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsRepositoryShould.emitsPlaylistsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsRepositoryShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.emitsPlaylistsFromService&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -279,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsMapperShould.keepSamePlaylistsId" />
         <item itemvalue="Gradle.PlaylistsRepositoryShould" />
         <item itemvalue="Gradle.PlaylistsRepositoryShould.getPlayListsFromService" />
         <item itemvalue="Gradle.PlaylistsRepositoryShould.propagateErrors" />
         <item itemvalue="Gradle.PlaylistsRepositoryShould.emitsPlaylistsFromServiceWithExpectedList" />
-        <item itemvalue="Gradle.PlaylistsRepositoryShould.emitsPlaylistsFromService" />
       </list>
     </recent_temporary>
   </component>
