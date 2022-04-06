@@ -1,5 +1,7 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists_details
 
+import android.tddapp.groovy.BaseUITest
+import android.tddapp.groovy.R
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.matcher.ViewMatchers

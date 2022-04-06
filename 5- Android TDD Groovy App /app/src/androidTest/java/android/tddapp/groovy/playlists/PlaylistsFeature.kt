@@ -1,6 +1,7 @@
-package android.tddapp.groovy
+package android.tddapp.groovy.playlists
 
-import android.tddapp.groovy.playlists.idlingResource
+import android.tddapp.groovy.BaseUITest
+import android.tddapp.groovy.R
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.action.ViewActions.click

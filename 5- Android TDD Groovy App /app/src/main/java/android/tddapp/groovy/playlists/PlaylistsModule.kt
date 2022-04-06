@@ -11,7 +11,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 // We need to add this because for testing we want to wait unless the data will be fetched from the API.
 val client = OkHttpClient()
-val idlingResource = OkHttp3IdlingResource.create("okhttp",client)
+val idlingResource = OkHttp3IdlingResource.create("okhttp", client)
+
 @Module
 @InstallIn(FragmentComponent::class)
 class PlaylistsModule {

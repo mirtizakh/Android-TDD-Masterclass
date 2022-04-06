@@ -14,7 +14,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272fa619-e49c-42d0-9310-59d57b9cdb27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetails.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelFactory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/PlaylistsDetailsFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFeature.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/PlaylistsFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/playlists/PlaylistsFeature.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/PlaylistsDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlists_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlists_details.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +70,7 @@
         <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
         <option value="navigationResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,7 +96,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy" />
     <property name="memory.settings.postsync.last.time.stamp" value="1649161124851" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -102,15 +110,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/utils" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="android.tddapp.groovy.playlists_details" />
       <recent name="android.tddapp.groovy.playlists" />
       <recent name="android.tddapp.groovy" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="android.tddapp.groovy.playlists" />
+      <recent name="android.tddapp.groovy.playlists_details" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="android.tddapp.groovy.playlists_details" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="android.tddapp.groovy.playlists_details" />
     </key>
     <key name="android.template.-1090792994">
       <recent name="android.tddapp.groovy" />
