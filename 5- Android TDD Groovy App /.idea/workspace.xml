@@ -14,11 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272fa619-e49c-42d0-9310-59d57b9cdb27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsDetailsViewModelShould">
+  <component name="RunManager" selected="Gradle.PlaylistsDetailsViewModelShould.emitErrorWhenServiceFails">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -212,6 +208,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PlaylistsDetailsViewModelShould.emitErrorWhenServiceFails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould.emitErrorWhenServiceFails&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -254,27 +271,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -298,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.emitErrorWhenServiceFails" />
         <item itemvalue="Gradle.PlaylistsDetailsViewModelShould" />
         <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService" />
         <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.getPlaylistsDetailsFromService" />
         <item itemvalue="Gradle.PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock" />
-        <item itemvalue="Gradle.PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock" />
       </list>
     </recent_temporary>
   </component>

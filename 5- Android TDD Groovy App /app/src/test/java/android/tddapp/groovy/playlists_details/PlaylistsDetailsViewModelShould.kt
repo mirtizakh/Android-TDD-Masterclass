@@ -19,12 +19,22 @@ class PlaylistsDetailsViewModelShould : BaseUnitTest() {
     private val mockService: PlaylistsDetailsService = spyk()
     private val mockPlaylistDetails: PlaylistsDetails = mockk()
     private val expected: Result<PlaylistsDetails> = Result.success(mockPlaylistDetails)
+    private val exception = RuntimeException("Something went wrong")
+    private val error = Result.failure<PlaylistsDetails>(exception)
 
     @Test
     fun getPlaylistsDetailsFromService() {
         runBlocking {
             mockSuccessfulCase()
             coVerify(exactly = 1) { mockService.fetchPlaylistsDetails(id) }
+        }
+    }
+
+    @Test
+    fun emitErrorWhenServiceFails() {
+        runBlocking {
+            mockErrorCase()
+            TestCase.assertEquals(error, viewModel.playlistsDetails.getValueForTest())
         }
     }
 
@@ -40,6 +50,16 @@ class PlaylistsDetailsViewModelShould : BaseUnitTest() {
         runBlocking {
             coEvery { mockService.fetchPlaylistsDetails(id) } returns flow {
                 emit(expected)
+            }
+        }
+        viewModel = PlaylistsDetailsViewModel(mockService)
+        viewModel.getPlaylistsDetails(id)
+    }
+
+    private fun mockErrorCase() {
+        runBlocking {
+            coEvery { mockService.fetchPlaylistsDetails(id) } returns flow {
+                emit(error)
             }
         }
         viewModel = PlaylistsDetailsViewModel(mockService)
