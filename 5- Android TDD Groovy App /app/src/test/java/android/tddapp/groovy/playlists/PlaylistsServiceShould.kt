@@ -35,7 +35,7 @@ class PlaylistsServiceShould : BaseUnitTest() {
     @Test
     fun emitsErrorResultsWhenNetworkFails() {
         runBlocking {
-            coEvery { mockPlaylistsAPI.fetchAllPlaylists() } throws RuntimeException("Network exception")
+            coEvery { mockPlaylistsAPI.fetchAllPlaylists() } throws RuntimeException("Something went wrong")
             val service = PlaylistsService(mockPlaylistsAPI)
             assertEquals(
                 "Something went wrong",
