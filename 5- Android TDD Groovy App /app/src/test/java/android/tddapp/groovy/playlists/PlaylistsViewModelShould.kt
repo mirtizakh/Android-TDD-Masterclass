@@ -20,7 +20,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     private val exception = RuntimeException("Something went wrong")
 
     @Test
-    private fun getPlaylistsFromTheRepository() {
+    fun getPlaylistsFromTheRepository() {
         viewModel = mockSuccessfulCase()
         runBlocking {
             viewModel.playlists.getValueForTest()
@@ -30,7 +30,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     }
 
     @Test
-    private fun emitsPlaylistsFromRepository() {
+    fun emitsPlaylistsFromRepository() {
         viewModel = mockSuccessfulCase()
         runBlocking {
             assertEquals(expected, viewModel.playlists.getValueForTest())
@@ -38,7 +38,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     }
 
     @Test
-    private fun emitErrorWhenReceiveError() {
+    fun emitErrorWhenReceiveError() {
         runBlocking {
             viewModel = mockErrorCase()
             assertEquals(exception, viewModel.playlists.getValueForTest()!!.exceptionOrNull())
@@ -47,7 +47,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     }
 
     @Test
-    private fun showProgressBarWhileLoading() {
+    fun showProgressBarWhileLoading() {
         runBlocking {
             viewModel = mockSuccessfulCase()
             viewModel.loader.captureValues {
@@ -58,7 +58,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     }
 
     @Test
-    private fun hideProgressBarAfterPlaylistsFetchIsCompleted() {
+    fun hideProgressBarAfterPlaylistsFetchIsCompleted() {
         runBlocking {
             viewModel = mockSuccessfulCase()
             viewModel.loader.captureValues {
@@ -69,7 +69,7 @@ class PlaylistsViewModelShould : BaseUnitTest() {
     }
 
     @Test
-    private fun hideProgressBarAfterError() {
+    fun hideProgressBarAfterError() {
         runBlocking {
             viewModel = mockErrorCase()
             viewModel.loader.captureValues {

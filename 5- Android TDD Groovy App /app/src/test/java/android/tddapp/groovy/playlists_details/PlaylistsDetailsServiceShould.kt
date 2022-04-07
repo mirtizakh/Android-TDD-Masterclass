@@ -21,14 +21,14 @@ class PlaylistsDetailsServiceShould : BaseUnitTest() {
         runBlocking {
             val playlistsService = PlaylistsDetailsService(mockPlaylistsAPI)
             playlistsService.fetchPlaylistsDetails(id).single()
-            coVerify(exactly = 1) { mockPlaylistsAPI.fetchPlaylistsDetails() }
+            coVerify(exactly = 1) { mockPlaylistsAPI.fetchPlaylistsDetails(id) }
         }
     }
 
     @Test
     fun convertValuesToFlowResultAndEmitThem() {
         runBlocking {
-            coEvery { mockPlaylistsAPI.fetchPlaylistsDetails() } returns mockPlaylistDetails
+            coEvery { mockPlaylistsAPI.fetchPlaylistsDetails(id) } returns mockPlaylistDetails
             val playlistsService = PlaylistsDetailsService(mockPlaylistsAPI)
             TestCase.assertEquals(
                 Result.success(mockPlaylistDetails),
@@ -40,12 +40,8 @@ class PlaylistsDetailsServiceShould : BaseUnitTest() {
     @Test
     fun emitErrorResultWhenNetworkFails() {
         runBlocking {
-            coEvery { mockPlaylistsAPI.fetchPlaylistsDetails() } throws RuntimeException("Network exception")
+            coEvery { mockPlaylistsAPI.fetchPlaylistsDetails(id) } throws RuntimeException("Network exception")
             val playlistsService = PlaylistsDetailsService(mockPlaylistsAPI)
-            TestCase.assertEquals(
-                RuntimeException("Network exception"),
-                playlistsService.fetchPlaylistsDetails(id).first().exceptionOrNull()!!
-            )
             TestCase.assertEquals(
                 "Network exception",
                 playlistsService.fetchPlaylistsDetails(id).first().exceptionOrNull()!!.message

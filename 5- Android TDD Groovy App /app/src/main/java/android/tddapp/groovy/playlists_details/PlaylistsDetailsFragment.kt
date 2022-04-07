@@ -6,12 +6,14 @@ import android.tddapp.groovy.R
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.fragment_playlists_details.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -37,18 +39,32 @@ class PlaylistsDetailsFragment : Fragment() {
 
         viewModel.getPlaylistsDetails(id)
 
-        viewModel.playlistsDetails.observe(this as LifecycleOwner) { playlistsDetails ->
-            if (playlistsDetails.getOrNull() != null) {
-                rootView.findViewById<TextView>(R.id.playlists_name).text =
-                    playlistsDetails.getOrNull()!!.name
-                rootView.findViewById<TextView>(R.id.playlists_details).text =
-                    playlistsDetails.getOrNull()!!.details
-            } else {
-                // TODO
-            }
-        }
+        observePlaylistLoader()
+
+        observePlaylistsDetails(rootView)
 
         return rootView
+    }
+
+    private fun observePlaylistsDetails(rootView: View) {
+        viewModel.playlistsDetails.observe(this as LifecycleOwner) { playlistsDetails ->
+            if (playlistsDetails.getOrNull() != null) {
+                setupUI(rootView, playlistsDetails)
+            } else {
+                Snackbar.make(rootView, R.string.generic_error, Snackbar.LENGTH_LONG).show()
+            }
+        }
+    }
+
+    private fun setupUI(
+        rootView: View,
+        playlistsDetails: Result<PlaylistsDetails>
+    ) {
+        playlistsDetails.getOrNull()?.let {
+            playlists_name.text = it.name
+            playlists_details.text = it.details
+        }
+
     }
 
     private fun setupViewModel() {
@@ -57,6 +73,12 @@ class PlaylistsDetailsFragment : Fragment() {
                 this,
                 playlistDetailsViewModelFactory
             ).get(PlaylistsDetailsViewModel::class.java)
+    }
+
+    private fun observePlaylistLoader() {
+        viewModel.loader.observe(this as LifecycleOwner) { loading ->
+            details_loader.isVisible = loading
+        }
     }
 
     companion object {

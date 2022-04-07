@@ -33,10 +33,13 @@ class PlaylistsFragment : Fragment() {
 
         setupViewModel()
 
-        playlistViewModel.loader.observe(this as LifecycleOwner) { loading ->
-            loader.isVisible = loading
-        }
+        observePlaylistLoader()
 
+        observePlaylist(view)
+        return view
+    }
+
+    private fun observePlaylist(view: View) {
         playlistViewModel.playlists.observe(this as LifecycleOwner) { playlists ->
             if (playlists.getOrNull() != null)
                 setupAdapter(view.playlists_list, playlists.getOrNull()!!)
@@ -44,7 +47,12 @@ class PlaylistsFragment : Fragment() {
                 // TODO
             }
         }
-        return view
+    }
+
+    private fun observePlaylistLoader() {
+        playlistViewModel.loader.observe(this as LifecycleOwner) { loading ->
+            loader.isVisible = loading
+        }
     }
 
     private fun setupAdapter(

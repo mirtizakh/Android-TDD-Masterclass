@@ -4,11 +4,11 @@ import android.tddapp.groovy.utils.BaseUnitTest
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
-import io.mockk.spyk
 import junit.framework.TestCase
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
+import petros.efthymiou.groovy.utils.captureValues
 import petros.efthymiou.groovy.utils.getValueForTest
 
 
@@ -16,7 +16,7 @@ class PlaylistsDetailsViewModelShould : BaseUnitTest() {
 
     private val id: String = "1"
     lateinit var viewModel: PlaylistsDetailsViewModel
-    private val mockService: PlaylistsDetailsService = spyk()
+    private val mockService: PlaylistsDetailsService = mockk()
     private val mockPlaylistDetails: PlaylistsDetails = mockk()
     private val expected: Result<PlaylistsDetails> = Result.success(mockPlaylistDetails)
     private val exception = RuntimeException("Something went wrong")
@@ -26,6 +26,7 @@ class PlaylistsDetailsViewModelShould : BaseUnitTest() {
     fun getPlaylistsDetailsFromService() {
         runBlocking {
             mockSuccessfulCase()
+            viewModel.getPlaylistsDetails(id)
             coVerify(exactly = 1) { mockService.fetchPlaylistsDetails(id) }
         }
     }
@@ -42,7 +43,32 @@ class PlaylistsDetailsViewModelShould : BaseUnitTest() {
     fun emitPlaylistsDetailsFromService() {
         runBlocking {
             mockSuccessfulCase()
+            viewModel.getPlaylistsDetails(id)
             TestCase.assertEquals(expected, viewModel.playlistsDetails.getValueForTest())
+        }
+    }
+
+    @Test
+    fun showProgressBarWhileLoading() {
+        runBlocking {
+            mockSuccessfulCase()
+            viewModel.loader.captureValues {
+                viewModel.getPlaylistsDetails(id)
+                // Below line is extra code we can remove it
+                viewModel.playlistsDetails.getValueForTest()
+                TestCase.assertEquals(true, values[0])
+            }
+        }
+    }
+
+    @Test
+    fun hideProgressBarAfterPlaylistsDetailsFetchIsCompleted() {
+        runBlocking {
+            mockSuccessfulCase()
+            viewModel.getPlaylistsDetails(id)
+            viewModel.loader.captureValues {
+                TestCase.assertEquals(false, values.last())
+            }
         }
     }
 
@@ -53,7 +79,6 @@ class PlaylistsDetailsViewModelShould : BaseUnitTest() {
             }
         }
         viewModel = PlaylistsDetailsViewModel(mockService)
-        viewModel.getPlaylistsDetails(id)
     }
 
     private fun mockErrorCase() {

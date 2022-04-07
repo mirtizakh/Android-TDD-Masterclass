@@ -11,7 +11,7 @@ class PlaylistsDetailsService @Inject constructor(
 
     suspend fun fetchPlaylistsDetails(id: String): Flow<Result<PlaylistsDetails>>  {
         return flow {
-            emit(Result.success(playlistsAPI.fetchPlaylistsDetails()))
+            emit(Result.success(playlistsAPI.fetchPlaylistsDetails(id)))
         }
             .catch {
                 emit(Result.failure(RuntimeException("Network exception")))

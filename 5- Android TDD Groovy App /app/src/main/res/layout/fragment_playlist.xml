@@ -10,9 +10,9 @@
         android:id="@+id/loader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:minWidth="40dp"
-        android:minHeight="40dp"
-        android:layout_gravity="center" />
+        android:minHeight="40dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/playlists_list"

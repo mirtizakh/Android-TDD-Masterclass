@@ -15,10 +15,18 @@
   <component name="ChangeListManager">
     <list default="true" id="272fa619-e49c-42d0-9310-59d57b9cdb27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsAPI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFeature.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlists_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlists_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists/PlaylistsServiceShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists/PlaylistsServiceShould.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists/PlaylistsViewModelShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists/PlaylistsViewModelShould.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsServiceShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsServiceShould.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +139,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsServiceShould.emitsErrorResultsWhenNetworkFails">
+  <component name="RunManager" selected="Gradle.PlaylistsDetailsViewModelShould">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -191,12 +199,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistsDetailsServiceShould.convertValuesToFlowResultAndEmitThem" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsServiceShould.convertValuesToFlowResultAndEmitThem&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -212,12 +220,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsDetailsServiceShould.emitErrorResultWhenNetworkFails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsServiceShould.emitErrorResultWhenNetworkFails&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -233,12 +241,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsDetailsServiceShould.getPlayListsDetailsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould.hideProgressBarAfterPlaylistsDetailsFetchIsCompleted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsServiceShould.getPlayListsDetailsFromService&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould.hideProgressBarAfterPlaylistsDetailsFetchIsCompleted&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -254,12 +262,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsRepositoryShould.emitsPlaylistsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould.showProgressBarWhileLoading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsRepositoryShould.emitsPlaylistsFromService&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould.showProgressBarWhileLoading&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -275,12 +283,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsServiceShould.emitsErrorResultsWhenNetworkFails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsViewModelShould.showProgressBarWhileLoading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsServiceShould.emitsErrorResultsWhenNetworkFails&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsViewModelShould.showProgressBarWhileLoading&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -298,11 +306,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PlaylistsServiceShould.emitsErrorResultsWhenNetworkFails" />
-        <item itemvalue="Gradle.PlaylistsDetailsServiceShould.emitErrorResultWhenNetworkFails" />
-        <item itemvalue="Gradle.PlaylistsDetailsServiceShould.convertValuesToFlowResultAndEmitThem" />
-        <item itemvalue="Gradle.PlaylistsDetailsServiceShould.getPlayListsDetailsFromService" />
-        <item itemvalue="Gradle.PlaylistsRepositoryShould.emitsPlaylistsFromService" />
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould" />
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.showProgressBarWhileLoading" />
+        <item itemvalue="Gradle.PlaylistsViewModelShould.showProgressBarWhileLoading" />
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.hideProgressBarAfterPlaylistsDetailsFetchIsCompleted" />
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService" />
       </list>
     </recent_temporary>
   </component>
@@ -338,11 +346,6 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsFragment.kt</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/MainActivity.kt</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
@@ -359,6 +362,11 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists/PlaylistsService.kt</url>
           <line>15</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt</url>
+          <line>58</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
