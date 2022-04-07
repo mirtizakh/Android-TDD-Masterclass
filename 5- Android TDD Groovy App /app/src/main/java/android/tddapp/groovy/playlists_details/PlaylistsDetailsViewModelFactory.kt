@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import javax.inject.Inject
 
 class PlaylistsDetailsViewModelFactory @Inject constructor(
-    private val repository: PlaylistsRepository
+    private val service: PlaylistsDetailsService
 ) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
@@ -15,7 +15,7 @@ class PlaylistsDetailsViewModelFactory @Inject constructor(
                 PlaylistsDetailsViewModel::class.java
             )
         ) {
-            return PlaylistsDetailsViewModel(repository) as T
+            return PlaylistsDetailsViewModel(service) as T
         }
 
         throw IllegalArgumentException("Unknown ViewModel class")

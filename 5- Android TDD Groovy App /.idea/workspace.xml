@@ -14,14 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272fa619-e49c-42d0-9310-59d57b9cdb27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetails.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelShould.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/PlaylistsDetailsFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFeature.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/PlaylistsFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/android/tddapp/groovy/playlists/PlaylistsFeature.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/PlaylistsDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlists_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_playlists_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/android/tddapp/groovy/playlists_details/PlaylistsDetailsViewModelFactory.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +65,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Class" />
         <option value="navigationResourceFile" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -134,7 +131,7 @@
       <recent name="android.tddapp.groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock">
+  <component name="RunManager" selected="Gradle.PlaylistsDetailsViewModelShould">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Groovy.app" />
       <option name="DEPLOY" value="true" />
@@ -194,12 +191,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistsMapperShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -215,12 +212,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsMapperShould.keepSamePlaylistsId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.keepSamePlaylistsId&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -236,12 +233,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlaylistsMapperShould.keepSamePlaylistsName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlaylistsDetailsViewModelShould.getPlaylistsDetailsFromService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists.PlaylistsMapperShould.keepSamePlaylistsName&quot;" />
+        <option name="scriptParameters" value="--tests &quot;android.tddapp.groovy.playlists_details.PlaylistsDetailsViewModelShould.getPlaylistsDetailsFromService&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -301,11 +298,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould" />
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.emitPlaylistsDetailsFromService" />
+        <item itemvalue="Gradle.PlaylistsDetailsViewModelShould.getPlaylistsDetailsFromService" />
         <item itemvalue="Gradle.PlaylistsMapperShould.mapRockImageWhenCategoryIsNotRock" />
         <item itemvalue="Gradle.PlaylistsMapperShould.mapDefaultImageWhenCategoryIsNotRock" />
-        <item itemvalue="Gradle.PlaylistsMapperShould" />
-        <item itemvalue="Gradle.PlaylistsMapperShould.keepSamePlaylistsName" />
-        <item itemvalue="Gradle.PlaylistsMapperShould.keepSamePlaylistsId" />
       </list>
     </recent_temporary>
   </component>
